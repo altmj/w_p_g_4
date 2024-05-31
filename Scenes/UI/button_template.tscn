@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3qeu32vr0yqt"]
+
+[ext_resource type="Script" path="res://Scripts/UI/ButtonTemplate.gd" id="1_ccksj"]
+[ext_resource type="FontFile" uid="uid://cnwwbddvuka7i" path="res://Fonts/Montserrat-Black.ttf" id="1_jka8h"]
+
+[sub_resource type="Gradient" id="Gradient_pql6e"]
+colors = PackedColorArray(0, 1, 1, 0.0980392, 0, 1, 1, 0.0980392)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8811i"]
+gradient = SubResource("Gradient_pql6e")
+width = 190
+height = 100
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a20qb"]
+size = Vector2(190, 100)
+
+[node name="ButtonRect" type="ColorRect"]
+offset_right = 190.0
+offset_bottom = 100.0
+color = Color(1, 1, 1, 0.227451)
+script = ExtResource("1_ccksj")
+
+[node name="ButtonLabel" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0.313726)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.5
+offset_top = -28.5
+offset_right = 66.5
+offset_bottom = 28.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 15
+theme_override_fonts/font = ExtResource("1_jka8h")
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ButtonTouch" type="TouchScreenButton" parent="."]
+texture_normal = SubResource("GradientTexture2D_8811i")
+shape = SubResource("RectangleShape2D_a20qb")
+
+[connection signal="pressed" from="ButtonTouch" to="." method="_on_button_touch_pressed"]
+[connection signal="released" from="ButtonTouch" to="." method="_on_button_touch_released"]

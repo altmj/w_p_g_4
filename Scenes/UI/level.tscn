@@ -1,0 +1,234 @@
+[gd_scene load_steps=11 format=3 uid="uid://bdaapihm5nifi"]
+
+[ext_resource type="Script" path="res://Scenes/UI/level.gd" id="1_j7hpx"]
+[ext_resource type="Texture2D" uid="uid://doccwnub300sb" path="res://Assets/UiGame/level/Android Large - Level up.png" id="2_55dlo"]
+[ext_resource type="Texture2D" uid="uid://bi4wun43qgg84" path="res://Assets/UiGame/level/Rectangle 2.png" id="3_hwskw"]
+[ext_resource type="FontFile" uid="uid://dc7rpxi1bjtqp" path="res://Assets/UiGame/LilitaOne-Regular.ttf" id="4_igm6p"]
+[ext_resource type="Texture2D" uid="uid://bkvlgcu4nsl7o" path="res://Assets/UiGame/level/Group 25.png" id="5_jxi63"]
+[ext_resource type="Texture2D" uid="uid://ctq1td4j8sidr" path="res://Assets/UiGame/level/Line 11.png" id="6_jm82i"]
+[ext_resource type="Texture2D" uid="uid://dh45e4y5ff0yr" path="res://Assets/UiGame/level/Ellipse 1.png" id="6_txjvh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ii8fu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uf2f8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gqdtw"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j7hpx")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_55dlo")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="background" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 488.0
+offset_right = -40.0
+offset_bottom = -608.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_hwskw")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 526.0
+offset_right = 756.0
+offset_bottom = 755.0
+theme_override_colors/font_color = Color(0.447059, 0.572549, 0.752941, 1)
+theme_override_fonts/font = ExtResource("4_igm6p")
+theme_override_font_sizes/font_size = 110
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii8fu")
+text = "Level Up!"
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="Panel/Label"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 178.0
+offset_right = 405.0
+offset_bottom = 228.0
+theme_override_colors/font_color = Color(0.447059, 0.572549, 0.752941, 1)
+theme_override_fonts/font = ExtResource("4_igm6p")
+theme_override_font_sizes/font_size = 43
+text = "Choose one to unlock"
+
+[node name="TextureButton" type="TextureButton" parent="Panel"]
+layout_mode = 0
+offset_left = 880.0
+offset_top = 528.0
+offset_right = 1016.0
+offset_bottom = 632.0
+texture_normal = ExtResource("5_jxi63")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureRect2" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 832.0
+offset_right = 552.0
+offset_bottom = 1440.0
+texture = ExtResource("6_jm82i")
+expand_mode = 1
+
+[node name="left" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 768.0
+offset_right = 536.0
+offset_bottom = 1632.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_uf2f8")
+metadata/_edit_lock_ = true
+
+[node name="TextureButton" type="TextureButton" parent="left"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 64.0
+offset_right = -24.0
+offset_bottom = -192.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="image" type="TextureRect" parent="left/TextureButton"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 8.0
+offset_right = 384.0
+offset_bottom = 312.0
+texture = ExtResource("6_txjvh")
+expand_mode = 1
+
+[node name="Nama" type="Label" parent="left/TextureButton"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 344.0
+offset_right = 304.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_igm6p")
+theme_override_font_sizes/font_size = 48
+text = "Eusinofil"
+
+[node name="Tipe" type="Label" parent="left/TextureButton/Nama"]
+layout_mode = 0
+offset_top = 41.0
+offset_right = 184.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_igm6p")
+theme_override_font_sizes/font_size = 35
+text = "weapon"
+horizontal_alignment = 1
+
+[node name="Des" type="Label" parent="left/TextureButton/Nama"]
+layout_mode = 0
+offset_left = -72.0
+offset_top = 104.0
+offset_right = 256.0
+offset_bottom = 296.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_igm6p")
+theme_override_font_sizes/font_size = 23
+text = "weapon is mmhjasnjhhujhhujhujhdjhawdjhadjhbwdjbhawhujdbgwajudhbwadjbhwhajdbhwajudhnwjdhbawjdhn"
+horizontal_alignment = 1
+autowrap_mode = 3
+text_overrun_behavior = 2
+
+[node name="right" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 768.0
+offset_right = 1040.0
+offset_bottom = 1632.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_gqdtw")
+metadata/_edit_lock_ = true
+
+[node name="TextureButton" type="TextureButton" parent="right"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 64.0
+offset_right = -24.0
+offset_bottom = -192.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="image" type="TextureRect" parent="right/TextureButton"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 10.0
+offset_right = 384.0
+offset_bottom = 314.0
+texture = ExtResource("6_txjvh")
+expand_mode = 1
+
+[node name="Nama" type="Label" parent="right/TextureButton"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 344.0
+offset_right = 337.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_igm6p")
+theme_override_font_sizes/font_size = 48
+text = "Interleukin"
+
+[node name="Des" type="Label" parent="right/TextureButton/Nama"]
+layout_mode = 0
+offset_left = -56.0
+offset_top = 104.0
+offset_right = 272.0
+offset_bottom = 296.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_igm6p")
+theme_override_font_sizes/font_size = 23
+text = "weapon is mmhjasnjhhujhhujhujhdjhawdjhadjhbwdjbhawhujdbgwajudhbwadjbhwhajdbhwajudhnwjdhbawjdhn"
+horizontal_alignment = 1
+autowrap_mode = 3
+text_overrun_behavior = 2
+
+[node name="Tipe" type="Label" parent="right/TextureButton/Nama"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 41.0
+offset_right = 200.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_igm6p")
+theme_override_font_sizes/font_size = 35
+text = "power Up"
+horizontal_alignment = 1

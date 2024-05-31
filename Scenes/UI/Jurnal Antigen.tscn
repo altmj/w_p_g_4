@@ -1,0 +1,1400 @@
+[gd_scene load_steps=48 format=3 uid="uid://y2rfnquxbrtm"]
+
+[ext_resource type="Script" path="res://Scripts/UI/mainMenu.gd" id="1_3adj4"]
+[ext_resource type="Texture2D" uid="uid://v5vf21sq4w6s" path="res://Assets/UiGame/menu utama/Background.png" id="2_mkwfm"]
+[ext_resource type="Texture2D" uid="uid://dmwrsbbfcysrr" path="res://Assets/UiGame/Jurnal Antigen/Android Large - Jurnal antigen.png" id="3_r1pbq"]
+[ext_resource type="Texture2D" uid="uid://cgvnia48f2eds" path="res://Assets/UiGame/menu utama/Profile.png" id="4_eg3bp"]
+[ext_resource type="FontFile" uid="uid://dc7rpxi1bjtqp" path="res://Assets/UiGame/LilitaOne-Regular.ttf" id="5_3ipgt"]
+[ext_resource type="Texture2D" uid="uid://ck7h7w85cim4y" path="res://Assets/UiGame/menu utama/coin.png" id="6_2eoy8"]
+[ext_resource type="Texture2D" uid="uid://dww8tcky1witf" path="res://Assets/UiGame/Jurnal Antigen/Jurnal antigen.png" id="7_jt65k"]
+[ext_resource type="Texture2D" uid="uid://bcso2ue82aph2" path="res://Assets/UiGame/menu utama/Jurnal Besar.png" id="9_vgmvj"]
+[ext_resource type="Texture2D" uid="uid://hyglfwjvcrbi" path="res://Assets/UiGame/menu utama/Home.png" id="10_54ys7"]
+[ext_resource type="Texture2D" uid="uid://thtnyxehlypm" path="res://Assets/UiGame/menu utama/Talents.png" id="11_emilb"]
+[ext_resource type="Script" path="res://Scenes/UI/Jurnal Isi.gd" id="12_16hqv"]
+[ext_resource type="Texture2D" uid="uid://dceggsas3vrhf" path="res://Assets/UiGame/Jurnal Antigen/Rectangle 16.png" id="13_72hqb"]
+[ext_resource type="Texture2D" uid="uid://b3thq5k070rq6" path="res://Assets/UiGame/Jurnal Antigen/Rectangle 5.png" id="13_y56e2"]
+[ext_resource type="Texture2D" uid="uid://mcr34y03qswt" path="res://Assets/UiGame/talent/Rectangle 2.png" id="13_y0868"]
+[ext_resource type="Texture2D" uid="uid://bmt80gf2jwoa6" path="res://Assets/UiGame/Jurnal Antigen/Rectangle 15.png" id="14_f0hlp"]
+[ext_resource type="Texture2D" uid="uid://6kl1mq62hbid" path="res://Assets/UiGame/Jurnal Antigen/Rectangle 6 kecil.png" id="15_a78b5"]
+[ext_resource type="Texture2D" uid="uid://carb8k8dqo0e6" path="res://Assets/UiGame/Nama Virus/Ascaris Lumbricoides.jpeg" id="15_i17ax"]
+[ext_resource type="Texture2D" uid="uid://bayi8huu4r8hf" path="res://Assets/UiGame/Nama Virus/Strongyloides Stercoralis.jpeg" id="16_u0tib"]
+[ext_resource type="Texture2D" uid="uid://bbdmbku6l6phs" path="res://Assets/UiGame/Nama Virus/Taenia Solium.jpeg" id="17_j4713"]
+[ext_resource type="Texture2D" uid="uid://d082e6ffaw5xj" path="res://Assets/UiGame/Nama Virus/Listeria Monocytogenes.jpeg" id="18_q8hoa"]
+[ext_resource type="Texture2D" uid="uid://bn8aaexr4rqrt" path="res://Assets/UiGame/Nama Virus/Virus_Herpes.jpg" id="19_25gn4"]
+[ext_resource type="Texture2D" uid="uid://djkatbqubblio" path="res://Assets/UiGame/Nama Virus/Virus_corona.jpg" id="20_25wem"]
+[ext_resource type="Texture2D" uid="uid://ciqmqjbnll70v" path="res://Assets/UiGame/Nama Virus/Virus_Influesnza.jpg" id="21_ttrn0"]
+[ext_resource type="Texture2D" uid="uid://xe56udafak7e" path="res://Assets/UiGame/Nama Virus/Virus_Mycobacterium_Tuberculosis_3.4_.jpg" id="22_0n5kn"]
+[ext_resource type="Texture2D" uid="uid://7p3d4k0ip3t" path="res://Assets/UiGame/Nama Virus/Escherichia Coli.jpeg" id="23_cd2j1"]
+[ext_resource type="Texture2D" uid="uid://dugdurqwixuu0" path="res://Assets/UiGame/Nama Virus/Hepatitis.png" id="24_ua0gr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jx7mr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lygtw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m37t2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nqog2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ilns2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gi6fa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_03ujv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jvbnn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j3em2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dfwk4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ha8v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_trsmp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l5qj7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p6avp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fxmy0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7hg70"]
+
+[sub_resource type="Theme" id="Theme_6ua4n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ds8ra"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pblya"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_notpl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3jjhj"]
+
+[node name="Jurnal Antigen" type="Node"]
+
+[node name="Main Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3adj4")
+
+[node name="Background" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_mkwfm")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="ui" type="TextureRect" parent="Main Menu"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_r1pbq")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Profil" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0685185
+anchor_top = 0.0254167
+anchor_right = 0.242593
+anchor_bottom = 0.103333
+texture = ExtResource("4_eg3bp")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="coin" type="VBoxContainer" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.779
+anchor_right = 0.645
+anchor_bottom = 0.837
+offset_left = 310.0
+offset_top = -1777.6
+offset_right = 360.4
+offset_bottom = -1794.8
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="text coin" type="Button" parent="Main Menu/coin"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jx7mr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_lygtw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_m37t2")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nqog2")
+text = "500"
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/coin/text coin"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -119.0
+offset_top = -18.0
+offset_right = 154.0
+offset_bottom = 79.0
+texture = ExtResource("6_2eoy8")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Nama" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.03
+offset_top = 302.0
+offset_right = 1080.0
+offset_bottom = 472.0
+texture = ExtResource("7_jt65k")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="Main Menu/Nama"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 52.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ilns2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_gi6fa")
+text = "Jurnal Antigen"
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 528.0
+offset_right = 1024.0
+offset_bottom = 2048.0
+texture = ExtResource("13_y0868")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Jurnal Antigen" type="Button" parent="Main Menu"]
+layout_mode = 2
+offset_top = 2120.0
+offset_right = 416.0
+offset_bottom = 2400.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jvbnn")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j3em2")
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Antigen"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 416.0
+offset_bottom = 285.0
+texture = ExtResource("9_vgmvj")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Battle" type="Button" parent="Main Menu"]
+layout_mode = 2
+offset_left = 424.0
+offset_top = 2176.0
+offset_right = 752.0
+offset_bottom = 2400.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dfwk4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5ha8v")
+text = " "
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/Battle"]
+show_behind_parent = true
+layout_mode = 2
+offset_top = 8.0
+offset_right = 328.0
+offset_bottom = 232.0
+texture = ExtResource("10_54ys7")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Talents" type="Button" parent="Main Menu"]
+layout_mode = 2
+offset_left = 756.0
+offset_top = 2184.0
+offset_right = 1080.0
+offset_bottom = 2400.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_trsmp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l5qj7")
+text = " "
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Talents"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_emilb")
+expand_mode = 1
+
+[node name="Jurnal Isi" type="Control" parent="Main Menu"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("12_16hqv")
+
+[node name="jurnal box top" type="Panel" parent="Main Menu/Jurnal Isi"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 528.0
+offset_right = 1008.0
+offset_bottom = 1200.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_p6avp")
+
+[node name="Ascaris Lumbricoides" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 888.0
+offset_bottom = 656.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak1" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Ascaris Lumbricoides"]
+layout_mode = 0
+offset_right = 840.0
+offset_bottom = 584.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Ascaris Lumbricoides/kotak1"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 64.0
+offset_right = 420.0
+offset_bottom = 136.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 44
+text = "Ascaris Lumbricoides"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Ascaris Lumbricoides/kotak1/Label"]
+layout_mode = 0
+offset_top = 104.0
+offset_right = 416.0
+offset_bottom = 416.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7hg70")
+text = "Cacing nematoda yang dapat menyebabkan infeksi usus (askariasis). Biasanya terdapat di tanah yang terkontaminasi tinja manusia.
+
+Penyakit:
+Askariasis, dapat menyebabkan gangguan pencernaan dan nutrisi."
+wrap_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Ascaris Lumbricoides/kotak1/Label"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = 360.0
+offset_right = -64.0
+offset_bottom = 488.0
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Ascaris Lumbricoides/kotak1"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Ascaris Lumbricoides/kotak1/image2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = -29.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("15_i17ax")
+expand_mode = 1
+
+[node name="Strongyloides Stercoralis" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 888.0
+offset_bottom = 656.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Strongyloides Stercoralis"]
+layout_mode = 0
+offset_right = 840.0
+offset_bottom = 584.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Strongyloides Stercoralis/kotak2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 56.0
+offset_right = 420.0
+offset_bottom = 148.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 40
+text = "Strongyloides
+Stercoralis"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Strongyloides Stercoralis/kotak2/Label"]
+layout_mode = 0
+offset_top = 112.0
+offset_right = 408.0
+offset_bottom = 472.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ds8ra")
+text = "Cacing nematoda yang menyebabkan strongyloidiasis. Ditemukan, terutama di daerah tropis dan subtropis.
+
+Penyakit: Strongyloidiasis, dapat menyebabkan masalah pernapasan dan pencernaan."
+wrap_mode = 1
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Strongyloides Stercoralis/kotak2"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Strongyloides Stercoralis/kotak2/image2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = -29.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("16_u0tib")
+expand_mode = 1
+
+[node name="Taenia Solium" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 888.0
+offset_bottom = 656.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak3" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Taenia Solium"]
+layout_mode = 0
+offset_right = 840.0
+offset_bottom = 584.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Taenia Solium/kotak3"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 72.0
+offset_right = 292.0
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 44
+text = "Taenia Solium"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Taenia Solium/kotak3/Label"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 400.0
+offset_bottom = 368.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pblya")
+text = "Cacing pita babi yang menyebabkan teniasis. Ditemukan  di daging babi yang tidak dimasak sempurna.
+
+Penyakit: Teniasis dan neurocysticercosis (jika larva menyebar ke otak)."
+wrap_mode = 1
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Taenia Solium/kotak3"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Taenia Solium/kotak3/image2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = -29.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("17_j4713")
+expand_mode = 1
+
+[node name="Listeria Monocytogenes" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 888.0
+offset_bottom = 656.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Listeria Monocytogenes"]
+layout_mode = 0
+offset_right = 840.0
+offset_bottom = 584.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Listeria Monocytogenes/kotak2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 72.0
+offset_right = 420.0
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 40
+text = "Listeria 
+Monocytogenes"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Listeria Monocytogenes/kotak2/Label"]
+layout_mode = 0
+offset_top = 112.0
+offset_right = 428.0
+offset_bottom = 472.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ds8ra")
+text = "Bakteri yang dapat menyebabkan listeriosis.  Ditemukan dalam makanan yang terkontaminasi, seperti daging olahan.
+
+Penyakit: Listeriosis, dapat menyebabkan infeksi serius pada wanita hamil dan orang dengan sistem kekebalan yang lemah."
+wrap_mode = 1
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Listeria Monocytogenes/kotak2"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Listeria Monocytogenes/kotak2/image2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = -29.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("18_q8hoa")
+expand_mode = 1
+
+[node name="Herpes Simplex" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 896.0
+offset_bottom = 656.0
+scale = Vector2(0.990176, 1.00973)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Herpes Simplex"]
+layout_mode = 0
+offset_right = 848.0
+offset_bottom = 584.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Herpes Simplex/kotak2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 72.0
+offset_right = 420.0
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 40
+text = "Herpes Simplex"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Herpes Simplex/kotak2/Label"]
+layout_mode = 0
+offset_left = 0.859549
+offset_top = 88.4391
+offset_right = 428.86
+offset_bottom = 448.439
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ds8ra")
+text = "Virus yang menyebabkan infeksi herpes simplex.  Ditemukan menular melalui kontak langsung dengan luka atau lendir yang terinfeksi.
+
+Penyakit: Lepuh dan luka di kulit atau selaput lendir."
+wrap_mode = 1
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Herpes Simplex/kotak2"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Herpes Simplex/kotak2/image2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = -29.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("19_25gn4")
+expand_mode = 1
+
+[node name="Coronavirus" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 896.0
+offset_bottom = 656.0
+scale = Vector2(0.990176, 1.00973)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Coronavirus"]
+layout_mode = 0
+offset_right = 848.0
+offset_bottom = 579.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Coronavirus/kotak2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 72.0
+offset_right = 420.0
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 40
+text = "Coronavirus"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Coronavirus/kotak2/Label"]
+layout_mode = 0
+offset_left = 0.859549
+offset_top = 88.4391
+offset_right = 428.86
+offset_bottom = 448.439
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ds8ra")
+text = "Keluarga virus yang mencakup SARS-CoV-2 yang menyebabkan COVID-19. Ditemukan, menular melalui droplet pernapasan dan kontak langsung.
+
+Penyakit: COVID-19, dapat menyebabkan gejala pernapasan dan masalah sistemik."
+wrap_mode = 1
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Coronavirus/kotak2"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Coronavirus/kotak2/image2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = -29.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("20_25wem")
+expand_mode = 1
+
+[node name="Influenza" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 896.0
+offset_bottom = 656.0
+scale = Vector2(0.990176, 1.00973)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Influenza"]
+layout_mode = 0
+offset_right = 848.0
+offset_bottom = 578.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Influenza/kotak2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 72.0
+offset_right = 420.0
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 40
+text = "Influenza"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Influenza/kotak2/Label"]
+layout_mode = 0
+offset_left = 0.859549
+offset_top = 88.4391
+offset_right = 428.86
+offset_bottom = 448.439
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ds8ra")
+text = "Virus yang menyebabkan flu.
+Ditemukan, menular melalui droplet pernapasan dan kontak langsung.
+
+Penyakit: Flu, dapat menyebabkan demam, batuk, dan nyeri otot."
+wrap_mode = 1
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Influenza/kotak2"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Influenza/kotak2/image2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = -29.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("21_ttrn0")
+expand_mode = 1
+
+[node name="Mycobacterium Tuberculosis" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 888.0
+offset_bottom = 656.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Mycobacterium Tuberculosis"]
+layout_mode = 0
+offset_right = 840.0
+offset_bottom = 584.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Mycobacterium Tuberculosis/kotak2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 76.0
+offset_right = 420.0
+offset_bottom = 171.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 40
+text = "Mycobacterium 
+Tuberculosis"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Mycobacterium Tuberculosis/kotak2/Label"]
+layout_mode = 0
+offset_top = 112.0
+offset_right = 408.0
+offset_bottom = 472.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ds8ra")
+text = "Bakteri penyebab tuberkulosis.
+Ditemukan, menular melalui udara dari orang yang terinfeksi.
+
+Penyakit: Tuberkulosis, dapat menyerang paru-paru dan organ lain."
+wrap_mode = 1
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Mycobacterium Tuberculosis/kotak2"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Mycobacterium Tuberculosis/kotak2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 76.0
+offset_top = 100.0
+offset_right = -518.0
+offset_bottom = -217.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("22_0n5kn")
+expand_mode = 1
+
+[node name="Escherichia Coli" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 888.0
+offset_bottom = 656.0
+scale = Vector2(0.990176, 1.00973)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Escherichia Coli"]
+layout_mode = 0
+offset_right = 848.0
+offset_bottom = 584.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Escherichia Coli/kotak2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 72.0
+offset_right = 420.0
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 40
+text = "Escherichia Coli"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Escherichia Coli/kotak2/Label"]
+layout_mode = 0
+offset_left = 0.859549
+offset_top = 88.4391
+offset_right = 428.86
+offset_bottom = 448.439
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ds8ra")
+text = "Bakteri yang dapat menyebabkan infeksi saluran pencernaan.
+Ditemukan, terutama di makanan yang terkontaminasi, daging yang tidak dimasak sempurna.
+
+Penyakit: Infeksi saluran pencernaan, beberapa strain dapat menyebabkan sindrom hemolitik uremik (SHU)."
+wrap_mode = 1
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Escherichia Coli/kotak2"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Escherichia Coli/kotak2/image2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = -29.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("23_cd2j1")
+expand_mode = 1
+
+[node name="Salmonella" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 896.0
+offset_bottom = 656.0
+scale = Vector2(0.990176, 1.00973)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Salmonella"]
+layout_mode = 0
+offset_right = 848.0
+offset_bottom = 584.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Salmonella/kotak2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 72.0
+offset_right = 420.0
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 40
+text = "Salmonella"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Salmonella/kotak2/Label"]
+layout_mode = 0
+offset_left = 0.859549
+offset_top = 88.4391
+offset_right = 428.86
+offset_bottom = 448.439
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ds8ra")
+text = "Bakteri yang menyebabkan infeksi saluran pencernaan.
+Ditemukan, terutama di makanan yang terkontaminasi, seperti telur mentah.
+
+Penyakit: Gastroenteritis, menyebabkan muntah dan diare."
+wrap_mode = 1
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Salmonella/kotak2"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Salmonella/kotak2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 74.7342
+offset_top = 99.0364
+offset_right = -526.266
+offset_bottom = -221.964
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("15_i17ax")
+expand_mode = 1
+
+[node name="Hepatitis A" type="Panel" parent="Main Menu/Jurnal Isi/jurnal box top"]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 888.0
+offset_bottom = 656.0
+scale = Vector2(0.990176, 1.00973)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxmy0")
+
+[node name="kotak2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Hepatitis A"]
+layout_mode = 0
+offset_right = 848.0
+offset_bottom = 584.0
+texture = ExtResource("13_y56e2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/jurnal box top/Hepatitis A/kotak2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 72.0
+offset_right = 420.0
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 40
+text = "Hepatitis A"
+
+[node name="TextEdit" type="TextEdit" parent="Main Menu/Jurnal Isi/jurnal box top/Hepatitis A/kotak2/Label"]
+layout_mode = 0
+offset_left = 0.859549
+offset_top = 88.4391
+offset_right = 428.86
+offset_bottom = 448.439
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ds8ra")
+text = "Virus yang menyebabkan hepatitis A.
+Ditemukan, menular melalui makanan atau minuman yang terkontaminasi.
+
+Penyakit: Hepatitis A, dapat menyebabkan peradangan hati dan gejala pencernaan."
+wrap_mode = 1
+
+[node name="image2" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Hepatitis A/kotak2"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 352.0
+offset_bottom = 400.0
+texture = ExtResource("14_f0hlp")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/jurnal box top/Hepatitis A/kotak2/image2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = -29.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6ua4n")
+texture = ExtResource("24_ua0gr")
+expand_mode = 1
+
+[node name="Jurnal box Tab" type="Panel" parent="Main Menu/Jurnal Isi"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 1200.0
+offset_right = 1024.0
+offset_bottom = 2048.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_notpl")
+metadata/_edit_lock_ = true
+
+[node name="Ascaris Lumbricoides" type="TextureButton" parent="Main Menu/Jurnal Isi/Jurnal box Tab"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 40.0
+offset_right = 307.0
+offset_bottom = 264.0
+texture_normal = ExtResource("15_a78b5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Ascaris Lumbricoides"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 160.0
+offset_right = 205.0
+offset_bottom = 204.0
+theme_override_constants/line_spacing = -4
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 20
+text = "Ascaris
+Lumbricoides"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Ascaris Lumbricoides"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 160.0
+texture = ExtResource("15_i17ax")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Strongyloides Stercoralis" type="TextureButton" parent="Main Menu/Jurnal Isi/Jurnal box Tab"]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 40.0
+offset_right = 595.0
+offset_bottom = 264.0
+texture_normal = ExtResource("15_a78b5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Strongyloides Stercoralis"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 160.0
+offset_right = 208.0
+offset_bottom = 211.0
+theme_override_constants/line_spacing = -4
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3jjhj")
+text = "Strongyloides
+Stercoralis"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Strongyloides Stercoralis"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 160.0
+texture = ExtResource("16_u0tib")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Taenia Solium" type="TextureButton" parent="Main Menu/Jurnal Isi/Jurnal box Tab"]
+layout_mode = 0
+offset_left = 659.0
+offset_top = 40.0
+offset_right = 883.0
+offset_bottom = 264.0
+texture_normal = ExtResource("15_a78b5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Taenia Solium"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 168.0
+offset_right = 208.0
+offset_bottom = 206.0
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 25
+text = "Taenia Solium"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Taenia Solium"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 160.0
+texture = ExtResource("17_j4713")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Listeria Monocytogenes" type="TextureButton" parent="Main Menu/Jurnal Isi/Jurnal box Tab"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 304.0
+offset_right = 307.0
+offset_bottom = 528.0
+texture_normal = ExtResource("15_a78b5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Listeria Monocytogenes"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 160.0
+offset_right = 213.0
+offset_bottom = 211.0
+theme_override_constants/line_spacing = -4
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 20
+text = "Listeria
+Monocytogenes"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Listeria Monocytogenes"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 160.0
+texture = ExtResource("18_q8hoa")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Herpes Simplex" type="TextureButton" parent="Main Menu/Jurnal Isi/Jurnal box Tab"]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 304.0
+offset_right = 595.0
+offset_bottom = 528.0
+texture_normal = ExtResource("15_a78b5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Herpes Simplex"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 168.0
+offset_right = 208.0
+offset_bottom = 206.0
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 25
+text = "Herpes Simplex"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Herpes Simplex"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 160.0
+texture = ExtResource("19_25gn4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Coronavirus" type="TextureButton" parent="Main Menu/Jurnal Isi/Jurnal box Tab"]
+layout_mode = 0
+offset_left = 659.0
+offset_top = 304.0
+offset_right = 883.0
+offset_bottom = 528.0
+texture_normal = ExtResource("15_a78b5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Coronavirus"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 168.0
+offset_right = 208.0
+offset_bottom = 206.0
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 25
+text = "Coronavirus"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Coronavirus"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 160.0
+texture = ExtResource("20_25wem")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Influenza" type="TextureButton" parent="Main Menu/Jurnal Isi/Jurnal box Tab"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 576.0
+offset_right = 307.0
+offset_bottom = 800.0
+texture_normal = ExtResource("15_a78b5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Influenza"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 168.0
+offset_right = 208.0
+offset_bottom = 206.0
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 25
+text = "Influenza"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Influenza"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 160.0
+texture = ExtResource("21_ttrn0")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Mycobacterium Tuberculosis" type="TextureButton" parent="Main Menu/Jurnal Isi/Jurnal box Tab"]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 576.0
+offset_right = 595.0
+offset_bottom = 800.0
+texture_normal = ExtResource("15_a78b5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Mycobacterium Tuberculosis"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 160.0
+offset_right = 208.0
+offset_bottom = 204.0
+theme_override_constants/line_spacing = -4
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 20
+text = "Mycobacterium
+Tuberculosis"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Mycobacterium Tuberculosis"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 160.0
+texture = ExtResource("22_0n5kn")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Escherichia Coli" type="TextureButton" parent="Main Menu/Jurnal Isi/Jurnal box Tab"]
+layout_mode = 0
+offset_left = 659.0
+offset_top = 576.0
+offset_right = 883.0
+offset_bottom = 800.0
+texture_normal = ExtResource("15_a78b5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Escherichia Coli"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 168.0
+offset_right = 208.0
+offset_bottom = 212.0
+theme_override_constants/line_spacing = -4
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 20
+text = "Escherichia Coli"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Escherichia Coli"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 160.0
+texture = ExtResource("23_cd2j1")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Salmonella" type="TextureButton" parent="Main Menu/Jurnal Isi/Jurnal box Tab"]
+visible = false
+layout_mode = 0
+offset_left = 659.0
+offset_top = 576.0
+offset_right = 883.0
+offset_bottom = 800.0
+texture_normal = ExtResource("15_a78b5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Salmonella"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 168.0
+offset_right = 207.0
+offset_bottom = 206.0
+theme_override_fonts/font = ExtResource("5_3ipgt")
+theme_override_font_sizes/font_size = 25
+text = "Salmonella"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Jurnal Isi/Jurnal box Tab/Salmonella"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 160.0
+texture = ExtResource("13_72hqb")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="Main Menu/Battle" to="Main Menu" method="_on_battle_pressed"]
+[connection signal="pressed" from="Main Menu/Talents" to="Main Menu" method="_on_talents_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Isi/Jurnal box Tab/Ascaris Lumbricoides" to="Main Menu/Jurnal Isi" method="_on_ascaris_lumbricoides_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Isi/Jurnal box Tab/Strongyloides Stercoralis" to="Main Menu/Jurnal Isi" method="_on_strongyloides_stercoralis_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Isi/Jurnal box Tab/Taenia Solium" to="Main Menu/Jurnal Isi" method="_on_taenia_solium_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Isi/Jurnal box Tab/Listeria Monocytogenes" to="Main Menu/Jurnal Isi" method="_on_listeria_monocytogenes_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Isi/Jurnal box Tab/Herpes Simplex" to="Main Menu/Jurnal Isi" method="_on_herpes_simplex_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Isi/Jurnal box Tab/Coronavirus" to="Main Menu/Jurnal Isi" method="_on_coronavirus_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Isi/Jurnal box Tab/Influenza" to="Main Menu/Jurnal Isi" method="_on_influenza_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Isi/Jurnal box Tab/Mycobacterium Tuberculosis" to="Main Menu/Jurnal Isi" method="_on_mycobacterium_tuberculosis_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Isi/Jurnal box Tab/Escherichia Coli" to="Main Menu/Jurnal Isi" method="_on_escherichia_coli_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Isi/Jurnal box Tab/Salmonella" to="Main Menu/Jurnal Isi" method="_on_salmonella_pressed"]

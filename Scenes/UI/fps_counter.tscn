@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b762v0543uqsh"]
+
+[ext_resource type="FontFile" uid="uid://cnwwbddvuka7i" path="res://Fonts/Montserrat-Black.ttf" id="1_3hn46"]
+[ext_resource type="Script" path="res://Scripts/UI/fps_counter.gd" id="2_g1u7c"]
+
+[node name="FPSCounter" type="Label"]
+offset_right = 106.0
+offset_bottom = 50.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("1_3hn46")
+theme_override_font_sizes/font_size = 30
+text = "FPS: "
+script = ExtResource("2_g1u7c")

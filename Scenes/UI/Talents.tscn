@@ -1,0 +1,859 @@
+[gd_scene load_steps=44 format=3 uid="uid://dtonp6ps0tqoi"]
+
+[ext_resource type="Script" path="res://Scripts/UI/mainMenu.gd" id="1_cw2u2"]
+[ext_resource type="Texture2D" uid="uid://v5vf21sq4w6s" path="res://Assets/UiGame/menu utama/Background.png" id="2_lvdfy"]
+[ext_resource type="Texture2D" uid="uid://cluvnylgelb5q" path="res://Assets/UiGame/talent/Android Large - Talents.png" id="3_66tna"]
+[ext_resource type="Texture2D" uid="uid://cgvnia48f2eds" path="res://Assets/UiGame/menu utama/Profile.png" id="4_5yglr"]
+[ext_resource type="FontFile" uid="uid://dc7rpxi1bjtqp" path="res://Assets/UiGame/LilitaOne-Regular.ttf" id="5_t1mpv"]
+[ext_resource type="Texture2D" uid="uid://ck7h7w85cim4y" path="res://Assets/UiGame/menu utama/coin.png" id="6_m2gti"]
+[ext_resource type="Texture2D" uid="uid://bbiy7i6fj06fl" path="res://Assets/UiGame/talent/talents nama.png" id="7_i2be5"]
+[ext_resource type="Texture2D" uid="uid://bw7p3bsuiv18f" path="res://Assets/UiGame/menu utama/Talents Besar.png" id="9_x5xx5"]
+[ext_resource type="Texture2D" uid="uid://mcr34y03qswt" path="res://Assets/UiGame/talent/Rectangle 2.png" id="11_fs14y"]
+[ext_resource type="Texture2D" uid="uid://hyglfwjvcrbi" path="res://Assets/UiGame/menu utama/Home.png" id="11_g245a"]
+[ext_resource type="Texture2D" uid="uid://o0wb1rn0g0lf" path="res://Assets/UiGame/menu utama/Jurnal.png" id="11_nxp5x"]
+[ext_resource type="Texture2D" uid="uid://14smbu02sfu2" path="res://Assets/UiGame/talent/Group 15.png" id="12_1181n"]
+[ext_resource type="Texture2D" uid="uid://cb7uumnwl0uhj" path="res://Assets/UiGame/talent/Group 61.png" id="13_ik3l4"]
+[ext_resource type="Texture2D" uid="uid://bvydd1wpbggom" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Interleukin-Attract (IL-Attract).png" id="14_chrod"]
+[ext_resource type="Texture2D" uid="uid://bc07kgnwxjq72" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Interleukin-Regenerative Aura (IL-Regen).png" id="15_wqrtq"]
+[ext_resource type="Texture2D" uid="uid://b4x1fmkjxsflk" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Interleukin-Firepower (IL-Firepower).png" id="16_mhrm8"]
+[ext_resource type="Texture2D" uid="uid://xivir4cxkpp1" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Interleukin-Accelerate (IL-Accelerate).png" id="17_5xh3s"]
+[ext_resource type="Texture2D" uid="uid://du08xv4dfqe2v" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Interleukin-Boosted Strength (IL-Strength).png" id="18_m8jcf"]
+[ext_resource type="Texture2D" uid="uid://b18ig6e0gu05r" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Interleukin-Barrier Boost (IL-Barrier).png" id="19_lpeay"]
+[ext_resource type="Texture2D" uid="uid://b5de3de6v6dyi" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Interleukin-Immunomodulator Cooldown (IL-Cooldown).png" id="20_xvylw"]
+[ext_resource type="Texture2D" uid="uid://la14xga2cqyx" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Neutrofil I.png" id="21_kukk1"]
+[ext_resource type="Texture2D" uid="uid://cnfyx8g6hkcpq" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Eosinofil.png" id="22_jmax2"]
+[ext_resource type="Texture2D" uid="uid://dk807lbjyppi7" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Magrofag.png" id="23_q5bfb"]
+[ext_resource type="Texture2D" uid="uid://cp4ttwvvol4o4" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Limfosit B.png" id="24_ehikg"]
+[ext_resource type="Texture2D" uid="uid://dr3cqiwv6qm61" path="res://Assets/UiGame/Nama Virus/WEApon powerup/Natural Killer Cell.png" id="25_537or"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_03ujv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ss6u7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tufbf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ttcih"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kdwty"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wbkno"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ut5ta"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f07oh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4vh3h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1dibf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v5wkg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mcfm0"]
+
+[sub_resource type="Theme" id="Theme_vcthw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4jcjc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hpkix"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m6klq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f0v7b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4xf27"]
+
+[node name="Talents" type="Node"]
+
+[node name="Main Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cw2u2")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_lvdfy")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="ui" type="TextureRect" parent="Main Menu"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_66tna")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Profil" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0685185
+anchor_top = 0.0254167
+anchor_right = 0.242593
+anchor_bottom = 0.103333
+texture = ExtResource("4_5yglr")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="coin" type="VBoxContainer" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.779
+anchor_right = 0.645
+anchor_bottom = 0.837
+offset_left = 310.0
+offset_top = -1777.6
+offset_right = 360.4
+offset_bottom = -1794.8
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="text coin" type="Button" parent="Main Menu/coin"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ss6u7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_tufbf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ttcih")
+text = "500"
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/coin/text coin"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -119.0
+offset_top = -18.0
+offset_right = 154.0
+offset_bottom = 79.0
+texture = ExtResource("6_m2gti")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Nama" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.03
+offset_left = 2.0
+offset_top = 285.0
+offset_right = 1082.0
+offset_bottom = 516.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_i2be5")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="Main Menu/Nama"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 46.0
+offset_top = 70.0
+offset_right = -41.0
+offset_bottom = -122.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kdwty")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wbkno")
+text = "Talents"
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 528.0
+offset_right = 1024.0
+offset_bottom = 2048.0
+texture = ExtResource("11_fs14y")
+expand_mode = 1
+
+[node name="Talents" type="Button" parent="Main Menu"]
+layout_mode = 2
+offset_left = 544.0
+offset_top = 2066.0
+offset_right = 544.0
+offset_bottom = 2066.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ut5ta")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f07oh")
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Talents"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 120.0
+offset_top = 54.0
+offset_right = 536.0
+offset_bottom = 340.0
+texture = ExtResource("9_x5xx5")
+expand_mode = 1
+
+[node name="Jurnal Antigen" type="Button" parent="Main Menu"]
+layout_mode = 2
+offset_top = 2176.0
+offset_right = 328.0
+offset_bottom = 2400.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4vh3h")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1dibf")
+text = " "
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/Jurnal Antigen"]
+show_behind_parent = true
+layout_mode = 2
+offset_top = 8.0
+offset_right = 328.0
+offset_bottom = 224.0
+texture = ExtResource("11_nxp5x")
+expand_mode = 1
+
+[node name="Battle" type="Button" parent="Main Menu"]
+layout_mode = 2
+offset_left = 336.0
+offset_top = 2184.0
+offset_right = 656.0
+offset_bottom = 2400.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_v5wkg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mcfm0")
+text = " "
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Battle"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_g245a")
+expand_mode = 1
+
+[node name="Upgrade" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 383.0
+offset_top = 1784.0
+offset_right = -374.0
+offset_bottom = -456.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_1181n")
+expand_mode = 1
+
+[node name="Button Creadits" type="Button" parent="Main Menu/Upgrade"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_vcthw")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4jcjc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hpkix")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_m6klq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f0v7b")
+text = "Upgrade"
+
+[node name="isi" type="NinePatchRect" parent="Main Menu"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 520.0
+offset_right = 1027.0
+offset_bottom = 1728.0
+
+[node name="1" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 176.0
+offset_right = 208.0
+offset_bottom = 376.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/1/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_chrod")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Main Menu/isi/1"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 34
+text = "IL-Attract"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="2" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 176.0
+offset_right = 448.0
+offset_bottom = 376.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/2"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 34
+text = "IL-Regen"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/isi/2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/2/TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_wqrtq")
+expand_mode = 1
+
+[node name="3" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 176.0
+offset_right = 680.0
+offset_bottom = 376.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/3"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 30
+text = "IL-Firepower"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/isi/3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/3/TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("16_mhrm8")
+expand_mode = 1
+
+[node name="4" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 176.0
+offset_right = 912.0
+offset_bottom = 376.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/4"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 28
+text = "IL-Accelerate"
+horizontal_alignment = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/isi/4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/4/TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17_5xh3s")
+expand_mode = 1
+
+[node name="5" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 473.0
+offset_right = 208.0
+offset_bottom = 673.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/5"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 30
+text = "IL-Strength"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/isi/5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/5/TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_m8jcf")
+expand_mode = 1
+
+[node name="6" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 472.0
+offset_right = 448.0
+offset_bottom = 672.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/6"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 34
+text = "IL-Barrier"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/isi/6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/6/TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("19_lpeay")
+expand_mode = 1
+
+[node name="7" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 472.0
+offset_right = 680.0
+offset_bottom = 672.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/7"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 29
+text = "IL-Cooldown"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/7/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_xvylw")
+expand_mode = 1
+
+[node name="8" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 472.0
+offset_right = 912.0
+offset_bottom = 672.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/8"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 29
+text = "Neutrofil I"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/isi/8"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/8/TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("21_kukk1")
+expand_mode = 1
+
+[node name="9" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 760.0
+offset_right = 216.0
+offset_bottom = 960.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/9"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 30
+text = "Eosinofil"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/isi/9"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/9/TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("22_jmax2")
+expand_mode = 1
+
+[node name="10" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 760.0
+offset_right = 448.0
+offset_bottom = 960.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/10"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 30
+text = "Magrofag"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/isi/10"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/10/TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_q5bfb")
+expand_mode = 1
+
+[node name="11" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 760.0
+offset_right = 680.0
+offset_bottom = 960.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/11"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 168.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 30
+text = "Limfosit B"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/isi/11"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/11/TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("24_ehikg")
+expand_mode = 1
+
+[node name="12" type="Panel" parent="Main Menu/isi"]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 760.0
+offset_right = 912.0
+offset_bottom = 960.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4xf27")
+
+[node name="Label" type="Label" parent="Main Menu/isi/12"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 205.0
+offset_right = 178.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_t1mpv")
+theme_override_font_sizes/font_size = 23
+text = "Natural Killer Cell"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/isi/12"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ik3l4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/isi/12/TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 43.0
+offset_right = -18.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("25_537or")
+expand_mode = 1
+
+[connection signal="pressed" from="Main Menu/Jurnal Antigen" to="Main Menu" method="_on_jurnal_antigen_pressed"]
+[connection signal="pressed" from="Main Menu/Battle" to="Main Menu" method="_on_battle_pressed"]

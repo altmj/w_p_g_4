@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2a0srldp3l2w"]
+
+[ext_resource type="Script" path="res://Scripts/Enemies/enemy_dummy.gd" id="1_520xh"]
+[ext_resource type="PackedScene" uid="uid://cqesfttm4nvgf" path="res://Scenes/Enemies/EnemyClass/hitflash_controller.tscn" id="2_v3rut"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7adky"]
+radius = 0.160668
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_jsuwu"]
+
+[node name="EnemyDummy" type="CharacterBody3D" groups=["enemies"]]
+collision_layer = 4
+collision_mask = 5
+script = ExtResource("1_520xh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.212156, 0)
+shape = SubResource("SphereShape3D_7adky")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.204182, 0, 0, 0, 0.204182, 0, 0, 0, 0.204182, 0, 0.2004, 0)
+mesh = SubResource("CapsuleMesh_jsuwu")
+
+[node name="HitflashController" parent="." instance=ExtResource("2_v3rut")]
+mesh_path = NodePath("../MeshInstance3D")

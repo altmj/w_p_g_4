@@ -1,0 +1,113 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7xaf4qsxoa4i"]
+
+[ext_resource type="Texture2D" uid="uid://dceggsas3vrhf" path="res://Assets/UiGame/Jurnal Antigen/Rectangle 16.png" id="1_wwb85"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.007
+anchor_bottom = 0.48
+offset_right = 0.439941
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.088
+anchor_top = 0.104
+anchor_right = 0.36
+anchor_bottom = 0.319
+offset_left = 0.255989
+offset_top = -7.808
+offset_right = 0.319977
+offset_bottom = 0.511993
+texture_normal = ExtResource("1_wwb85")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton2" type="TextureButton" parent="ScrollContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.088
+anchor_top = 0.104
+anchor_right = 0.36
+anchor_bottom = 0.319
+offset_left = 0.255989
+offset_top = 336.192
+offset_right = 0.319977
+offset_bottom = 344.512
+texture_normal = ExtResource("1_wwb85")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton3" type="TextureButton" parent="ScrollContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.088
+anchor_top = 0.104
+anchor_right = 0.36
+anchor_bottom = 0.319
+offset_left = 8.25599
+offset_top = 672.192
+offset_right = 8.31998
+offset_bottom = 680.512
+texture_normal = ExtResource("1_wwb85")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton4" type="TextureButton" parent="ScrollContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.088
+anchor_top = 0.104
+anchor_right = 0.36
+anchor_bottom = 0.319
+offset_left = 8.25599
+offset_top = 1040.19
+offset_right = 8.31998
+offset_bottom = 1048.51
+texture_normal = ExtResource("1_wwb85")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton5" type="TextureButton" parent="ScrollContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.088
+anchor_top = 0.104
+anchor_right = 0.36
+anchor_bottom = 0.319
+offset_left = 24.256
+offset_top = 1376.19
+offset_right = 24.32
+offset_bottom = 1384.51
+texture_normal = ExtResource("1_wwb85")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton6" type="TextureButton" parent="ScrollContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.088
+anchor_top = 0.104
+anchor_right = 0.36
+anchor_bottom = 0.319
+offset_left = 24.256
+offset_top = 1744.19
+offset_right = 24.32
+offset_bottom = 1752.51
+texture_normal = ExtResource("1_wwb85")
+ignore_texture_size = true
+stretch_mode = 0

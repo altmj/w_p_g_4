@@ -1,0 +1,176 @@
+[gd_scene load_steps=15 format=3 uid="uid://cotta10xeyh2a"]
+
+[ext_resource type="Script" path="res://Scripts/UI/mainMenu.gd" id="1_ohj7l"]
+[ext_resource type="Texture2D" uid="uid://11sh3eeyun5x" path="res://Assets/UiGame/setting/Rectangle 65.png" id="2_vqlo0"]
+[ext_resource type="Texture2D" uid="uid://byhkw384lvoyd" path="res://Assets/UiGame/Pause/background pause.png" id="3_ynhh6"]
+[ext_resource type="Texture2D" uid="uid://dwb5258cmbote" path="res://Assets/UiGame/Pause/Android Large - Pause.png" id="4_uix7h"]
+[ext_resource type="Texture2D" uid="uid://cw0sd27w0elsn" path="res://Assets/UiGame/Pause/Group 8.png" id="5_arvc5"]
+[ext_resource type="FontFile" uid="uid://dc7rpxi1bjtqp" path="res://Assets/UiGame/LilitaOne-Regular.ttf" id="6_s675o"]
+[ext_resource type="Texture2D" uid="uid://dmfkq6qeebjwc" path="res://Assets/UiGame/Pause/Group 11.png" id="7_sklfb"]
+
+[sub_resource type="Theme" id="Theme_oahkf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wtevl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_imxvt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a8q3n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7322"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kujkg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wyw6v"]
+
+[node name="Game" type="Node"]
+
+[node name="PAuse" type="Control" parent="."]
+light_mask = 31
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -16.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ohj7l")
+
+[node name="Background" type="TextureRect" parent="PAuse"]
+light_mask = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.007
+anchor_right = 1.0
+anchor_bottom = 1.007
+offset_top = 0.864
+offset_bottom = -49.136
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_vqlo0")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="PAuse"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 120.0
+offset_right = 1088.0
+offset_bottom = 2096.0
+texture = ExtResource("3_ynhh6")
+expand_mode = 1
+
+[node name="ui" type="TextureRect" parent="PAuse"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_uix7h")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Main MEnu" type="TextureRect" parent="PAuse"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 160.0
+offset_top = 1712.0
+offset_right = -568.0
+offset_bottom = -592.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_arvc5")
+expand_mode = 1
+
+[node name="Button Main Menu" type="Button" parent="PAuse/Main MEnu"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 352.0
+offset_bottom = 128.0
+theme = SubResource("Theme_oahkf")
+theme_override_fonts/font = ExtResource("6_s675o")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wtevl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_imxvt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_a8q3n")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v7322")
+text = "Main Menu"
+
+[node name="Setting" type="TextureRect" parent="PAuse"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 568.0
+offset_top = 1712.0
+offset_right = -160.0
+offset_bottom = -592.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_arvc5")
+expand_mode = 1
+
+[node name="Button Setting Pause" type="Button" parent="PAuse/Setting"]
+layout_mode = 0
+offset_right = 352.0
+offset_bottom = 128.0
+theme = SubResource("Theme_oahkf")
+theme_override_fonts/font = ExtResource("6_s675o")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wtevl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_imxvt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_kujkg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v7322")
+text = "Setting"
+
+[node name="Button" type="Button" parent="PAuse"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.338
+anchor_top = 0.173
+anchor_right = 0.669
+anchor_bottom = 0.233
+offset_left = -79.04
+offset_top = -73.504
+offset_right = 49.48
+offset_bottom = 5.61603
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.447059, 0.572549, 0.752941, 1)
+theme_override_fonts/font = ExtResource("6_s675o")
+theme_override_font_sizes/font_size = 110
+text = "PAUSE"
+flat = true
+
+[node name="Resume" type="TextureRect" parent="PAuse"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 368.0
+offset_top = 1472.0
+offset_right = -368.0
+offset_bottom = -832.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_sklfb")
+expand_mode = 1
+
+[node name="Button resume" type="Button" parent="PAuse/Resume"]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 120.0
+theme = SubResource("Theme_oahkf")
+theme_override_fonts/font = ExtResource("6_s675o")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wtevl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_imxvt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wyw6v")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v7322")
+
+[connection signal="pressed" from="PAuse/Main MEnu/Button Main Menu" to="PAuse" method="_on_button_main_menu_pressed"]
+[connection signal="pressed" from="PAuse/Setting/Button Setting Pause" to="PAuse" method="_on_button_setting_pause_pressed"]
+[connection signal="pressed" from="PAuse/Resume/Button resume" to="PAuse" method="_on_button_resume_pressed"]

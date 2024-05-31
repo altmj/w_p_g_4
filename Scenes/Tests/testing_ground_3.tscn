@@ -1,0 +1,84 @@
+[gd_scene load_steps=15 format=3 uid="uid://c0pxwgy8h2218"]
+
+[ext_resource type="Texture2D" uid="uid://doyodkg1ds7td" path="res://Assets/Textures/Sky.png" id="1_500x1"]
+[ext_resource type="Script" path="res://Scenes/Tests/testing_ground_3.gd" id="1_tasry"]
+[ext_resource type="Texture2D" uid="uid://b8q44ipg8a3cq" path="res://Assets/Textures/Black.png" id="2_2j7ls"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_3otv7"]
+panorama = ExtResource("1_500x1")
+
+[sub_resource type="Sky" id="Sky_5ngqa"]
+sky_material = SubResource("PanoramaSkyMaterial_3otv7")
+
+[sub_resource type="Environment" id="Environment_ndux4"]
+background_mode = 2
+sky = SubResource("Sky_5ngqa")
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ajchh"]
+albedo_texture = ExtResource("2_2j7ls")
+uv1_triplanar = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7m1pg"]
+material = SubResource("StandardMaterial3D_ajchh")
+size = Vector2(50, 50)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_sytan"]
+data = PackedVector3Array(25, 0, 25, -25, 0, 25, 25, 0, -25, -25, 0, 25, -25, 0, -25, 25, 0, -25)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7adky"]
+radius = 0.160668
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m0ilu"]
+albedo_color = Color(0.647059, 0.247059, 0.301961, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0lsjh"]
+material = SubResource("StandardMaterial3D_m0ilu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qknoe"]
+albedo_color = Color(0.215686, 0.290196, 0.639216, 1)
+
+[sub_resource type="PrismMesh" id="PrismMesh_7qk2x"]
+material = SubResource("StandardMaterial3D_qknoe")
+
+[node name="TestingGround" type="Node3D"]
+script = ExtResource("1_tasry")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ndux4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866026, -0.433013, 0.249999, 0.5, -0.75, 0.433012, -1.3411e-07, 0.499999, 0.866026, 0, 0, 0)
+light_energy = 0.4
+shadow_enabled = true
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.19209e-07, 0)
+mesh = SubResource("PlaneMesh_7m1pg")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_sytan")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.835529, 0.549446, 0, -0.549446, 0.835529, 0, 1.07926, 0)
+
+[node name="EnemyDummy" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.26358)
+collision_layer = 4
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyDummy"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.212156, 0)
+shape = SubResource("SphereShape3D_7adky")
+
+[node name="RedMeshTest" type="MeshInstance3D" parent="EnemyDummy"]
+transform = Transform3D(0.204182, 0, 0, 0, 0.204182, 0, 0, 0, 0.204182, 0, 0.2004, 0)
+mesh = SubResource("CapsuleMesh_0lsjh")
+
+[node name="BlueMeshTest" type="MeshInstance3D" parent="EnemyDummy"]
+transform = Transform3D(0.204182, 0, 0, 0, 0.204182, 0, 0, 0, 0.204182, 0, 0.428347, 0)
+mesh = SubResource("PrismMesh_7qk2x")
+skeleton = NodePath("")

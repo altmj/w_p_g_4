@@ -1,0 +1,155 @@
+[gd_scene load_steps=14 format=3 uid="uid://br880gjn6ulvd"]
+
+[ext_resource type="Script" path="res://Scripts/UI/mainMenu.gd" id="1_rxncb"]
+[ext_resource type="Texture2D" uid="uid://11sh3eeyun5x" path="res://Assets/UiGame/setting/Rectangle 65.png" id="2_yusm7"]
+[ext_resource type="Texture2D" uid="uid://b1gwe3xsimus6" path="res://Assets/UiGame/Pause/confirm main menu - setelan.png" id="3_wx0jk"]
+[ext_resource type="Texture2D" uid="uid://cluonf60le8cx" path="res://Assets/UiGame/Pause/Background Are You sure.png" id="4_bwyft"]
+[ext_resource type="Texture2D" uid="uid://7g76aib38eic" path="res://Assets/UiGame/Pause/Group 9.png" id="5_fqtd8"]
+[ext_resource type="FontFile" uid="uid://dc7rpxi1bjtqp" path="res://Assets/UiGame/LilitaOne-Regular.ttf" id="6_vuf7q"]
+[ext_resource type="Texture2D" uid="uid://cw0sd27w0elsn" path="res://Assets/UiGame/Pause/Group 8.png" id="7_nlifv"]
+
+[sub_resource type="Theme" id="Theme_oahkf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wtevl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_imxvt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3iln3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7322"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_krlk0"]
+
+[node name="Game" type="Node"]
+
+[node name="Main Menu" type="Control" parent="."]
+light_mask = 31
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rxncb")
+
+[node name="Background" type="TextureRect" parent="Main Menu"]
+light_mask = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.007
+anchor_right = 1.0
+anchor_bottom = 1.007
+offset_top = -0.800001
+offset_bottom = -0.800293
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yusm7")
+expand_mode = 1
+
+[node name="ui" type="TextureRect" parent="Main Menu"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_wx0jk")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu"]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 776.0
+offset_right = 1080.0
+offset_bottom = 1752.0
+texture = ExtResource("4_bwyft")
+expand_mode = 1
+
+[node name="Yes" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 256.0
+offset_top = 1312.0
+offset_right = -592.0
+offset_bottom = -976.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_fqtd8")
+expand_mode = 1
+
+[node name="Button Yes" type="Button" parent="Main Menu/Yes"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_oahkf")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_vuf7q")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wtevl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_imxvt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3iln3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v7322")
+text = "Yes"
+metadata/_edit_lock_ = true
+
+[node name="No" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 584.0
+offset_top = 1312.0
+offset_right = -256.0
+offset_bottom = -976.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_nlifv")
+expand_mode = 1
+
+[node name="Button No" type="Button" parent="Main Menu/No"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_oahkf")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_vuf7q")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wtevl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_imxvt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_krlk0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v7322")
+text = "No"
+metadata/_edit_lock_ = true
+
+[node name="Title" type="Button" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.383
+anchor_right = 0.793
+anchor_bottom = 0.437
+offset_top = -7.20001
+offset_right = 4.55994
+offset_bottom = 7.19995
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.447059, 0.572549, 0.752941, 1)
+theme_override_fonts/font = ExtResource("6_vuf7q")
+theme_override_font_sizes/font_size = 90
+text = "ARE YOU SURE ?"
+flat = true
+
+[connection signal="pressed" from="Main Menu/Yes/Button Yes" to="Main Menu" method="_on_button_yes_pressed"]
+[connection signal="pressed" from="Main Menu/No/Button No" to="Main Menu" method="_on_button_no_pressed"]

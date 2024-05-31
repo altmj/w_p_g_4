@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://be3x23bhb1ebi"]
+
+[ext_resource type="Script" path="res://Scripts/Weapons/player_bullet.gd" id="1_6rv7v"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7f2i0"]
+bounce = 0.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ku6k2"]
+diffuse_mode = 3
+specular_mode = 2
+albedo_color = Color(1, 0.815686, 0.721569, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_h3gr0"]
+material = SubResource("StandardMaterial3D_ku6k2")
+radius = 0.05
+height = 0.1
+radial_segments = 6
+rings = 4
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_1op0s"]
+radius = 0.0488393
+
+[node name="PlayerBullet" type="RigidBody3D"]
+collision_layer = 2
+collision_mask = 4
+mass = 0.1
+physics_material_override = SubResource("PhysicsMaterial_7f2i0")
+gravity_scale = 0.5
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_6rv7v")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_h3gr0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_1op0s")
+
+[node name="DespawnTimer" type="Timer" parent="."]
+process_callback = 0
+one_shot = true
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="DespawnTimer" to="." method="_on_despawn_timer_timeout"]

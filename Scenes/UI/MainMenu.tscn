@@ -1,0 +1,273 @@
+[gd_scene load_steps=30 format=3 uid="uid://rc3becrr4v8m"]
+
+[ext_resource type="Script" path="res://Scripts/UI/mainMenu.gd" id="1_58e5t"]
+[ext_resource type="Texture2D" uid="uid://v5vf21sq4w6s" path="res://Assets/UiGame/menu utama/Background.png" id="2_oh7v4"]
+[ext_resource type="Texture2D" uid="uid://cgvnia48f2eds" path="res://Assets/UiGame/menu utama/Profile.png" id="3_e35lm"]
+[ext_resource type="Texture2D" uid="uid://b7vrkma38slmr" path="res://Assets/UiGame/menu utama/Start.png" id="4_k6jd2"]
+[ext_resource type="FontFile" uid="uid://dc7rpxi1bjtqp" path="res://Assets/UiGame/LilitaOne-Regular.ttf" id="4_r4fjh"]
+[ext_resource type="Texture2D" uid="uid://ck7h7w85cim4y" path="res://Assets/UiGame/menu utama/coin.png" id="6_5irdf"]
+[ext_resource type="Texture2D" uid="uid://docaykuc42iws" path="res://Assets/UiGame/menu utama/Setting.png" id="8_n5cp5"]
+[ext_resource type="Texture2D" uid="uid://tgjwnuovehje" path="res://Assets/UiGame/menu utama/Home Besar.png" id="9_k1ytn"]
+[ext_resource type="Texture2D" uid="uid://o0wb1rn0g0lf" path="res://Assets/UiGame/menu utama/Jurnal.png" id="10_mvdwa"]
+[ext_resource type="Texture2D" uid="uid://thtnyxehlypm" path="res://Assets/UiGame/menu utama/Talents.png" id="11_sjrgj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_03ujv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8hms"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pnayw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_umru5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tsbho"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tjfi4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vdxf1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gkosb"]
+
+[sub_resource type="Theme" id="Theme_sqbkb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dwy1s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ld2h3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oiv7v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cdnfn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5gb3j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hidry"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_maq5i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ak4rx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nnlqq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mvgix"]
+
+[node name="Game" type="Node"]
+
+[node name="Main Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_58e5t")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_oh7v4")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Profil" type="TextureRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0685185
+anchor_top = 0.0254167
+anchor_right = 0.242593
+anchor_bottom = 0.103333
+texture = ExtResource("3_e35lm")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="start" type="TextureRect" parent="Main Menu"]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 1596.0
+offset_right = 744.0
+offset_bottom = 1868.0
+texture = ExtResource("4_k6jd2")
+expand_mode = 1
+
+[node name="Button Start" type="Button" parent="Main Menu/start"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.059
+anchor_top = 0.105
+anchor_right = 0.908
+anchor_bottom = 0.941
+offset_left = 0.110998
+offset_top = 0.00999832
+offset_right = 0.131989
+offset_bottom = 0.0419922
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_r4fjh")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_l8hms")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pnayw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_umru5")
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="Main Menu/start"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 81.0
+offset_right = 291.0
+offset_bottom = 174.0
+theme_override_fonts/font = ExtResource("4_r4fjh")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tsbho")
+text = "START
+"
+
+[node name="coin" type="VBoxContainer" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.779
+anchor_right = 0.645
+anchor_bottom = 0.837
+offset_left = 310.0
+offset_top = -1777.6
+offset_right = 360.4
+offset_bottom = -1794.8
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="text coin" type="Button" parent="Main Menu/coin"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_r4fjh")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tjfi4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vdxf1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gkosb")
+text = "500"
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/coin/text coin"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -119.0
+offset_top = -18.0
+offset_right = 154.0
+offset_bottom = 79.0
+texture = ExtResource("6_5irdf")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Button Pengaturan" type="Button" parent="Main Menu"]
+layout_mode = 0
+offset_left = 882.0
+offset_top = 296.0
+offset_right = 1010.0
+offset_bottom = 433.0
+theme = SubResource("Theme_sqbkb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_dwy1s")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ld2h3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_oiv7v")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cdnfn")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Button Pengaturan"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_n5cp5")
+expand_mode = 1
+
+[node name="Battle" type="Button" parent="Main Menu"]
+layout_mode = 2
+offset_left = 544.0
+offset_top = 2066.0
+offset_right = 544.0
+offset_bottom = 2066.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_r4fjh")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5gb3j")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hidry")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Battle"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -208.0
+offset_top = 54.0
+offset_right = 208.0
+offset_bottom = 334.0
+texture = ExtResource("9_k1ytn")
+expand_mode = 1
+
+[node name="Jurnal Antigen" type="Button" parent="Main Menu"]
+layout_mode = 2
+offset_top = 2184.0
+offset_right = 328.0
+offset_bottom = 2400.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("4_r4fjh")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_maq5i")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ak4rx")
+text = " "
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Main Menu/Jurnal Antigen"]
+show_behind_parent = true
+layout_mode = 2
+offset_right = 328.0
+offset_bottom = 216.0
+texture = ExtResource("10_mvdwa")
+expand_mode = 1
+
+[node name="Talents" type="Button" parent="Main Menu"]
+layout_mode = 2
+offset_left = 756.0
+offset_top = 2184.0
+offset_right = 1080.0
+offset_bottom = 2400.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("4_r4fjh")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03ujv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nnlqq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mvgix")
+text = " "
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu/Talents"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_sjrgj")
+expand_mode = 1
+
+[connection signal="pressed" from="Main Menu/start/Button Start" to="Main Menu" method="_on_button_start_pressed"]
+[connection signal="pressed" from="Main Menu/Button Pengaturan" to="Main Menu" method="_on_button_pengaturan_pressed"]
+[connection signal="pressed" from="Main Menu/Jurnal Antigen" to="Main Menu" method="_on_jurnal_antigen_pressed"]
+[connection signal="pressed" from="Main Menu/Talents" to="Main Menu" method="_on_talents_pressed"]

@@ -1,0 +1,54 @@
+[gd_scene load_steps=10 format=3 uid="uid://dt1fvenxmy40i"]
+
+[ext_resource type="Texture2D" uid="uid://doyodkg1ds7td" path="res://Assets/Textures/Sky.png" id="1_w202o"]
+[ext_resource type="Texture2D" uid="uid://b8q44ipg8a3cq" path="res://Assets/Textures/Black.png" id="2_x3sn1"]
+[ext_resource type="PackedScene" uid="uid://b2a0srldp3l2w" path="res://Scenes/Enemies/enemy_dummy.tscn" id="3_cqvd0"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_3otv7"]
+panorama = ExtResource("1_w202o")
+
+[sub_resource type="Sky" id="Sky_5ngqa"]
+sky_material = SubResource("PanoramaSkyMaterial_3otv7")
+
+[sub_resource type="Environment" id="Environment_ndux4"]
+background_mode = 2
+sky = SubResource("Sky_5ngqa")
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ajchh"]
+albedo_texture = ExtResource("2_x3sn1")
+uv1_triplanar = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7m1pg"]
+material = SubResource("StandardMaterial3D_ajchh")
+size = Vector2(50, 50)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_sytan"]
+data = PackedVector3Array(25, 0, 25, -25, 0, 25, 25, 0, -25, -25, 0, 25, -25, 0, -25, 25, 0, -25)
+
+[node name="TestingGround" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ndux4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866026, -0.433013, 0.249999, 0.5, -0.75, 0.433012, -1.3411e-07, 0.499999, 0.866026, 0, 0, 0)
+light_energy = 0.4
+shadow_enabled = true
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.19209e-07, 0)
+mesh = SubResource("PlaneMesh_7m1pg")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_sytan")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.835529, 0.549446, 0, -0.549446, 0.835529, 0, 1.07926, 0)
+
+[node name="EnemyDummy" parent="." instance=ExtResource("3_cqvd0")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.451776, -1.16686)
+spawning_sequence = true
