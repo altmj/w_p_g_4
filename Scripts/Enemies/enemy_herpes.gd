@@ -64,6 +64,7 @@ func _on_bullet_hit(damage):
 			set_collision_layer_value(3, false)
 			despawning = true
 			ScoreCounter.add_exp(exp_on_defeat)
+			GlobalVar.cached_kill += 1
 			print("exp send")
 		else:
 			hitflash.hitflash()

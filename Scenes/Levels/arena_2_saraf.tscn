@@ -1,0 +1,58 @@
+[gd_scene load_steps=11 format=3 uid="uid://fayqv5fi6wll"]
+
+[ext_resource type="Texture2D" uid="uid://doyodkg1ds7td" path="res://Assets/Textures/Sky.png" id="1_unggd"]
+[ext_resource type="Script" path="res://Scripts/Mechanics/EnemySpawnTimer.gd" id="2_dmfqy"]
+[ext_resource type="PackedScene" uid="uid://8wnnefvf6x83" path="res://Scenes/Enemies/enemy_herpes.tscn" id="3_4cbda"]
+[ext_resource type="PackedScene" uid="uid://dukfsde7scdey" path="res://Scenes/Characters/player_immuno_gen1.tscn" id="4_owf2e"]
+[ext_resource type="PackedScene" uid="uid://du10fn66sird" path="res://Scenes/Levels/arena_saraf_ground.tscn" id="5_812ac"]
+[ext_resource type="Script" path="res://Scripts/Mechanics/DebugTimer.gd" id="6_qjb3u"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6c4vd"]
+panorama = ExtResource("1_unggd")
+
+[sub_resource type="Sky" id="Sky_lbmov"]
+sky_material = SubResource("PanoramaSkyMaterial_6c4vd")
+
+[sub_resource type="Environment" id="Environment_ctwiv"]
+background_mode = 2
+sky = SubResource("Sky_lbmov")
+tonemap_mode = 2
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_xxrrd"]
+vertices = PackedVector3Array(-5.21054, 0.0367145, -5.21054, -5.21054, 0.0367145, 5.18946, 5.18946, 0.0367145, 5.18946, 5.18946, 0.0367145, -5.21054)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+geometry_source_geometry_mode = 1
+geometry_source_group_name = &"navmesh_level1"
+cell_size = 0.05
+cell_height = 0.05
+agent_height = 0.1
+agent_radius = 0.1
+
+[node name="Level2_Saraf" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ctwiv")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866026, -0.433013, 0.249999, 0.5, -0.750001, 0.433012, -1.3411e-07, 0.499999, 0.866026, 0, 0, 0)
+light_energy = 0.4
+shadow_enabled = true
+
+[node name="EnemySpawnTimer" type="Timer" parent="."]
+autostart = true
+script = ExtResource("2_dmfqy")
+enemy_to_spawn = ExtResource("3_4cbda")
+
+[node name="Player" parent="." instance=ExtResource("4_owf2e")]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_xxrrd")
+
+[node name="arena_saraf" parent="NavigationRegion3D" instance=ExtResource("5_812ac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.431591, 0)
+
+[node name="DebugTimer" type="Timer" parent="."]
+autostart = true
+script = ExtResource("6_qjb3u")
+
+[connection signal="timeout" from="DebugTimer" to="DebugTimer" method="_on_timeout"]

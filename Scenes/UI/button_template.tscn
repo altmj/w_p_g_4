@@ -3,15 +3,15 @@
 [ext_resource type="Script" path="res://Scripts/UI/ButtonTemplate.gd" id="1_ccksj"]
 [ext_resource type="FontFile" uid="uid://cnwwbddvuka7i" path="res://Fonts/Montserrat-Black.ttf" id="1_jka8h"]
 
-[sub_resource type="Gradient" id="Gradient_pql6e"]
+[sub_resource type="Gradient" id="Gradient_afnrv"]
 colors = PackedColorArray(0, 1, 1, 0.0980392, 0, 1, 1, 0.0980392)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_8811i"]
-gradient = SubResource("Gradient_pql6e")
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ar5rr"]
+gradient = SubResource("Gradient_afnrv")
 width = 190
 height = 100
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a20qb"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fpykv"]
 size = Vector2(190, 100)
 
 [node name="ButtonRect" type="ColorRect"]
@@ -43,8 +43,8 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="ButtonTouch" type="TouchScreenButton" parent="."]
-texture_normal = SubResource("GradientTexture2D_8811i")
-shape = SubResource("RectangleShape2D_a20qb")
+texture_normal = SubResource("GradientTexture2D_ar5rr")
+shape = SubResource("RectangleShape2D_fpykv")
 
 [connection signal="pressed" from="ButtonTouch" to="." method="_on_button_touch_pressed"]
 [connection signal="released" from="ButtonTouch" to="." method="_on_button_touch_released"]

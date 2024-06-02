@@ -1,6 +1,6 @@
 extends Timer
 
-@export var enemy_to_spawn : PackedScene
+@export var enemy_to_spawn : Array[PackedScene]
 
 @onready var root = get_parent()
 @onready var player = root.find_child("Player")
@@ -27,7 +27,7 @@ func _on_enemy_spawn_timer_timeout():
 		checker_inst.global_position = Vector3(random_x, 0, random_z)
 		var _text = "checker, position: %v ; global: %v" % [checker_inst.position, checker_inst.global_position]
 		#print(text)
-		checker_inst.set_enemy_type(enemy_to_spawn)
+		checker_inst.set_enemy_type(enemy_to_spawn.pick_random())
 		checker_inst.set_root(root)
 		checker_inst.start_checking()
 	else:
