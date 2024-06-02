@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://kof3e5mn3gln"]
+
+[ext_resource type="PackedScene" uid="uid://cnfwu7wm0y003" path="res://Assets/Models/Environment/arena_pernapasan.blend" id="1_2wur8"]
+
+[node name="arena_pernapasan" instance=ExtResource("1_2wur8")]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://dukfsde7scdey"]
+[gd_scene load_steps=45 format=3 uid="uid://dukfsde7scdey"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/Player.gd" id="1_wftj0"]
 [ext_resource type="Texture2D" uid="uid://b8oh3856i72ua" path="res://Assets/Models/Characters/player_immuno_body.png" id="2_2a4u6"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://Scripts/Characters/health.gd" id="9_xmhgc"]
 [ext_resource type="Script" path="res://Scripts/Characters/EXP.gd" id="10_tfgi1"]
 [ext_resource type="Script" path="res://Scripts/kill_onready.gd" id="11_0vp5p"]
+[ext_resource type="PackedScene" uid="uid://be4xl7pp80u6b" path="res://Scenes/UI/pause_button.tscn" id="11_ubii4"]
 [ext_resource type="Script" path="res://Scripts/Characters/Level.gd" id="12_8lr6h"]
 [ext_resource type="PackedScene" uid="uid://cqesfttm4nvgf" path="res://Scenes/Enemies/EnemyClass/hitflash_controller.tscn" id="13_r3nuw"]
 
@@ -519,6 +520,14 @@ _data = {
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_s7jmt"]
+font_size = 41
+
+[sub_resource type="LabelSettings" id="LabelSettings_7ge8i"]
+font = ExtResource("7_hln3r")
+font_size = 40
+font_color = Color(0.746108, 0.328427, 0.304066, 1)
+outline_size = 20
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_f8f6k"]
 font = ExtResource("7_hln3r")
@@ -543,7 +552,7 @@ material = SubResource("StandardMaterial3D_anosv")
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("joystick_left")]
 script = ExtResource("1_wftj0")
-joystick_left = NodePath("UI/JoyLeft")
+joystick_left = NodePath("UI/JoyLeft2")
 
 [node name="PlayerModelBlender" type="Node3D" parent="."]
 transform = Transform3D(0.185087, 0, 0, 0, 0.185087, 0, 0, 0, 0.185087, 0, 0, 0)
@@ -557,7 +566,7 @@ bones/0/parent = -1
 bones/0/rest = Transform3D(0.999937, 0.0106035, -0.00367782, -0.00709011, 0.342791, -0.939387, -0.00870007, 0.939352, 0.342845, 0.0134624, -0.678677, -0.969119)
 bones/0/enabled = true
 bones/0/position = Vector3(0.0134624, -0.678677, -0.969119)
-bones/0/rotation = Quaternion(0.573203, 0.00396073, -0.00192707, 0.819401)
+bones/0/rotation = Quaternion(0.573211, -0.00275067, -0.0115206, 0.819322)
 bones/0/scale = Vector3(1, 1, 1)
 bones/1/name = "Bone.001"
 bones/1/parent = 0
@@ -571,14 +580,14 @@ bones/2/parent = 1
 bones/2/rest = Transform3D(0.999267, 0.0324524, 0.0203179, -0.032131, 0.422176, 0.905944, 0.0208223, -0.905933, 0.422909, 4.6293e-10, 0.62848, -1.56385e-07)
 bones/2/enabled = true
 bones/2/position = Vector3(4.6293e-10, 0.62848, -1.56385e-07)
-bones/2/rotation = Quaternion(-0.538116, -0.0119506, -0.011486, 0.842708)
+bones/2/rotation = Quaternion(-0.53683, 0.0207421, -0.0326759, 0.842802)
 bones/2/scale = Vector3(1, 1, 1)
 bones/3/name = "Bone.035"
 bones/3/parent = 2
 bones/3/rest = Transform3D(1, 3.68381e-09, 2.12046e-11, -3.68386e-09, 0.999971, 0.00763875, 6.93569e-12, -0.00763875, 0.999971, 8.88178e-16, 1.00357, 9.31323e-09)
 bones/3/enabled = true
 bones/3/position = Vector3(8.88178e-16, 1.00357, 9.31323e-09)
-bones/3/rotation = Quaternion(-0.00360781, -0.000313959, 0.0100935, 0.999943)
+bones/3/rotation = Quaternion(-0.00419341, 0.000556369, -0.0178868, 0.999831)
 bones/3/scale = Vector3(1, 1, 1)
 bones/4/name = "Bone.036"
 bones/4/parent = 3
@@ -592,14 +601,14 @@ bones/5/parent = 0
 bones/5/rest = Transform3D(-0.761888, -0.64765, -0.00869963, 0.215834, -0.266522, 0.939352, -0.61069, 0.713803, 0.342845, -0.229271, 0.961495, 0.22741)
 bones/5/enabled = true
 bones/5/position = Vector3(-0.229271, 0.961495, 0.22741)
-bones/5/rotation = Quaternion(-0.201025, 0.536811, 0.769991, 0.280244)
+bones/5/rotation = Quaternion(-0.199329, 0.537444, 0.770872, 0.277811)
 bones/5/scale = Vector3(1, 1, 1)
 bones/6/name = "Bone.018"
 bones/6/parent = 5
 bones/6/rest = Transform3D(0.757306, -0.65306, 5.55119e-08, 0.65306, 0.757306, -1.0489e-06, 6.42957e-07, 8.30592e-07, 1, 1.08647e-07, 0.470084, 7.85008e-10)
 bones/6/enabled = true
 bones/6/position = Vector3(1.08647e-07, 0.470084, 7.85008e-10)
-bones/6/rotation = Quaternion(5.02595e-07, -1.52371e-07, 0.340299, 0.940317)
+bones/6/rotation = Quaternion(5.01654e-07, -1.55443e-07, 0.346045, 0.938218)
 bones/6/scale = Vector3(1, 1, 1)
 bones/7/name = "Bone.019"
 bones/7/parent = 6
@@ -655,14 +664,14 @@ bones/14/parent = 0
 bones/14/rest = Transform3D(-0.773961, 0.633174, -0.00870025, -0.223423, -0.260194, 0.939351, 0.592509, 0.728965, 0.342845, 0.186209, 0.965901, 0.225882)
 bones/14/enabled = true
 bones/14/position = Vector3(0.186209, 0.965901, 0.225882)
-bones/14/rotation = Quaternion(0.185634, 0.542326, 0.772755, -0.272529)
+bones/14/rotation = Quaternion(0.189217, 0.541086, 0.770936, -0.277634)
 bones/14/scale = Vector3(1, 1, 1)
 bones/15/name = "Bone.027"
 bones/15/parent = 14
 bones/15/rest = Transform3D(0.77846, 0.627694, -1.76369e-06, -0.627694, 0.77846, 5.47361e-07, 1.71654e-06, 6.80961e-07, 1, -1.05741e-07, 0.45731, -5.03817e-10)
 bones/15/enabled = true
 bones/15/position = Vector3(-1.05741e-07, 0.45731, -5.03817e-10)
-bones/15/rotation = Quaternion(2.93176e-08, -9.22873e-07, -0.326579, 0.94517)
+bones/15/rotation = Quaternion(3.23654e-08, -9.2277e-07, -0.329699, 0.944086)
 bones/15/scale = Vector3(1, 1, 1)
 bones/16/name = "Bone.028"
 bones/16/parent = 15
@@ -732,7 +741,7 @@ bones/25/parent = 24
 bones/25/rest = Transform3D(1, -5.66441e-08, 2.98023e-08, 5.66441e-08, 1, 1.24523e-09, -2.98023e-08, -1.24522e-09, 1, -8.98295e-08, 0.219699, -6.78546e-09)
 bones/25/enabled = true
 bones/25/position = Vector3(-8.98295e-08, 0.219699, -6.78546e-09)
-bones/25/rotation = Quaternion(0.258158, 0.00105286, -0.515451, 0.817107)
+bones/25/rotation = Quaternion(0.26202, 0.000637176, -0.523557, 0.810699)
 bones/25/scale = Vector3(1, 1, 1)
 bones/26/name = "Bone.006"
 bones/26/parent = 25
@@ -781,7 +790,7 @@ bones/32/parent = 31
 bones/32/rest = Transform3D(1, 5.01294e-08, -4.47035e-08, -5.01294e-08, 1, -4.58842e-08, 4.47035e-08, 4.58842e-08, 1, 6.36398e-08, 0.219699, -5.9896e-08)
 bones/32/enabled = true
 bones/32/position = Vector3(6.36398e-08, 0.219699, -5.9896e-08)
-bones/32/rotation = Quaternion(0.545084, -0.000106652, 0.271607, 0.793167)
+bones/32/rotation = Quaternion(0.550409, -6.45656e-05, 0.274618, 0.788439)
 bones/32/scale = Vector3(1, 1, 1)
 bones/33/name = "Bone.013"
 bones/33/parent = 32
@@ -872,8 +881,23 @@ scale = Vector2(1.01492, 1)
 
 [node name="JoyLeft" parent="UI" instance=ExtResource("5_x2ifn")]
 layout_mode = 1
-offset_top = -300.0
-offset_bottom = 0.0
+offset_left = 300.516
+offset_top = -689.0
+offset_right = 887.516
+offset_bottom = -104.0
+scale = Vector2(0.803979, 0.803979)
+
+[node name="JoyLeft2" parent="UI" instance=ExtResource("5_x2ifn")]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -992.252
+offset_top = -500.0
+offset_right = -692.252
+offset_bottom = -200.0
+grow_horizontal = 2
 scale = Vector2(0.745692, 0.745692)
 
 [node name="ButtonPeek" parent="UI" instance=ExtResource("6_a5clk")]
@@ -883,12 +907,13 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -190.0
+offset_left = -393.246
 offset_top = 67.0
-offset_right = -20.0
+offset_right = -223.246
 offset_bottom = 187.0
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(2.08591, 2.08591)
 text = "Peek"
 debug_texture = false
 set_font_size = 35
@@ -918,12 +943,13 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -190.0
-offset_top = -68.0
-offset_right = -20.0
-offset_bottom = 52.0
+offset_left = -393.246
+offset_top = -209.0
+offset_right = -223.246
+offset_bottom = -88.9999
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(2.08733, 2.08733)
 text = "Sprint"
 debug_texture = false
 set_font_size = 35
@@ -942,9 +968,10 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -195.145
-offset_right = -126.145
-offset_bottom = 50.0
+offset_left = -756.822
+offset_top = 360.0
+offset_right = -649.822
+offset_bottom = 411.0
 grow_horizontal = 0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 15
@@ -954,13 +981,30 @@ text = "FPS: "
 label_settings = SubResource("LabelSettings_s7jmt")
 script = ExtResource("8_kqf7c")
 
+[node name="KillCounter" type="Label" parent="UI"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -761.0
+offset_top = -903.0
+offset_right = -37.0
+offset_bottom = -850.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Enemies left: 7"
+label_settings = SubResource("LabelSettings_7ge8i")
+
 [node name="HealthBar" type="ProgressBar" parent="UI"]
 self_modulate = Color(0, 1, 0.486275, 1)
 layout_mode = 0
-offset_left = 1.0
-offset_top = 6.0
-offset_right = 336.0
-offset_bottom = 48.0
+offset_left = 315.296
+offset_top = 118.0
+offset_right = 650.296
+offset_bottom = 160.0
+scale = Vector2(2.09776, 2.09776)
 value = 100.0
 show_percentage = false
 script = ExtResource("9_xmhgc")
@@ -968,10 +1012,11 @@ script = ExtResource("9_xmhgc")
 [node name="ExpBar" type="ProgressBar" parent="UI"]
 modulate = Color(0.968627, 0.701961, 0, 1)
 layout_mode = 0
-offset_left = 2.9559
-offset_top = 52.0
-offset_right = 287.956
-offset_bottom = 79.0
+offset_left = 317.252
+offset_top = 229.0
+offset_right = 602.252
+offset_bottom = 256.0
+scale = Vector2(2.21569, 2.21569)
 value = 50.0
 script = ExtResource("10_tfgi1")
 
@@ -990,6 +1035,13 @@ grow_horizontal = 0
 grow_vertical = 2
 text = "Lv. 1"
 label_settings = SubResource("LabelSettings_f8f6k")
+
+[node name="PauseButton" parent="UI" instance=ExtResource("11_ubii4")]
+layout_mode = 0
+offset_left = 22.6619
+offset_top = 136.0
+offset_right = 194.662
+offset_bottom = 306.0
 
 [node name="BulletSpawnerPivot" type="Node3D" parent="."]
 
@@ -1028,6 +1080,11 @@ process_callback = 0
 wait_time = 0.1
 autostart = true
 
+[node name="CheckKillTimer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.1
+autostart = true
+
 [node name="Level" type="Node3D" parent="."]
 script = ExtResource("12_8lr6h")
 
@@ -1039,6 +1096,8 @@ mesh_path = NodePath("../PlayerModelBlender/Armature/Skeleton3D/Sphere_001")
 [connection signal="btn_pressed" from="UI/ButtonAttack" to="." method="_on_button_attack_btn_pressed"]
 [connection signal="btn_pressed" from="UI/ButtonSprint" to="." method="_on_button_sprint_btn_pressed"]
 [connection signal="btn_released" from="UI/ButtonSprint" to="." method="_on_button_sprint_btn_released"]
+[connection signal="pressed" from="UI/PauseButton" to="." method="_on_pause_button_pressed"]
 [connection signal="timeout" from="ShootingTimer" to="." method="_on_shooting_timer_timeout"]
 [connection signal="timeout" from="CheckExpTimer" to="." method="_on_check_exp_timer_timeout"]
 [connection signal="timeout" from="CheckDamageTimer" to="." method="_on_check_damage_timer_timeout"]
+[connection signal="timeout" from="CheckKillTimer" to="." method="_on_check_kill_timer_timeout"]

@@ -1,0 +1,143 @@
+[gd_scene load_steps=7 format=3 uid="uid://cv31wjikf02gv"]
+
+[ext_resource type="PackedScene" uid="uid://c0ajn13hcvbyy" path="res://Assets/Models/Environment/arena_kulit.blend" id="1_yvycy"]
+[ext_resource type="Texture2D" uid="uid://bfckqpm0u0pu6" path="res://Assets/Models/Environment/textures/Texture kulit.png" id="2_psi3m"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8isfh"]
+data = PackedVector3Array(1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, 1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pf6uq"]
+resource_name = "Material"
+cull_mode = 2
+albedo_texture = ExtResource("2_psi3m")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_koatn"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2.00001, 2.00001, 2),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray(0, 0, 6, 0, 4, 0, 0, 0, 2, 0, 6, 0, 3, 0, 6, 0, 2, 0, 3, 0, 7, 0, 6, 0, 7, 0, 4, 0, 6, 0, 7, 0, 5, 0, 4, 0, 5, 0, 3, 0, 1, 0, 5, 0, 7, 0, 3, 0, 1, 0, 2, 0, 0, 0, 1, 0, 3, 0, 2, 0, 5, 0, 0, 0, 4, 0, 5, 0, 1, 0, 0, 0),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray(254, 255, 254, 255, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 0, 0, 254, 255, 254, 255, 255, 255, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 254, 255, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ispng"]
+resource_name = "arena_kulit_Cube"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2.00001, 2.00001, 2),
+"attribute_data": PackedByteArray(27, 186, 124, 174, 254, 92, 255, 255, 27, 186, 124, 174, 221, 162, 124, 174, 221, 162, 124, 174, 221, 162, 124, 174, 27, 186, 61, 151, 254, 92, 215, 92, 27, 186, 61, 151, 221, 162, 61, 151, 221, 162, 61, 151, 221, 162, 61, 151, 27, 186, 186, 197, 255, 255, 255, 255, 27, 186, 186, 197, 221, 162, 186, 197, 158, 139, 124, 174, 221, 162, 186, 197, 27, 186, 255, 127, 255, 255, 215, 92, 27, 186, 249, 220, 221, 162, 255, 127, 158, 139, 61, 151, 221, 162, 249, 220),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray(1, 0, 19, 0, 13, 0, 1, 0, 7, 0, 19, 0, 9, 0, 18, 0, 6, 0, 9, 0, 21, 0, 18, 0, 23, 0, 14, 0, 20, 0, 23, 0, 17, 0, 14, 0, 16, 0, 10, 0, 4, 0, 16, 0, 22, 0, 10, 0, 5, 0, 8, 0, 2, 0, 5, 0, 11, 0, 8, 0, 15, 0, 0, 0, 12, 0, 15, 0, 3, 0, 0, 0),
+"material": SubResource("StandardMaterial3D_pf6uq"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(2.75332, 2.75339, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray(254, 255, 254, 255, 0, 0, 255, 255, 254, 255, 254, 255, 0, 0, 255, 255, 254, 255, 254, 255, 0, 0, 84, 213, 254, 255, 0, 0, 0, 0, 255, 255, 254, 255, 0, 0, 0, 0, 255, 191, 254, 255, 0, 0, 0, 0, 84, 213, 254, 255, 254, 255, 255, 255, 255, 191, 254, 255, 254, 255, 255, 255, 255, 255, 254, 255, 254, 255, 255, 255, 84, 213, 254, 255, 0, 0, 255, 255, 255, 191, 254, 255, 0, 0, 255, 255, 255, 191, 254, 255, 0, 0, 255, 255, 84, 213, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 254, 255, 0, 0, 84, 213, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 191, 0, 0, 0, 0, 0, 0, 84, 213, 0, 0, 254, 255, 255, 255, 255, 191, 0, 0, 254, 255, 255, 255, 255, 255, 0, 0, 254, 255, 255, 255, 84, 213, 0, 0, 0, 0, 255, 255, 255, 191, 0, 0, 0, 0, 255, 255, 255, 191, 0, 0, 0, 0, 255, 255, 84, 213, 255, 191, 255, 191, 255, 127, 255, 191, 170, 42, 170, 42, 255, 191, 255, 191, 0, 0, 255, 127, 170, 42, 170, 42, 255, 255, 255, 255, 255, 127, 255, 191, 170, 42, 170, 42, 255, 255, 255, 255, 0, 0, 255, 127, 170, 42, 170, 42, 255, 191, 255, 191, 255, 127, 255, 191, 84, 213, 84, 213, 255, 191, 255, 191, 0, 0, 255, 127, 84, 213, 84, 213, 255, 255, 255, 255, 255, 127, 255, 191, 84, 213, 84, 213, 255, 255, 255, 255, 0, 0, 255, 127, 84, 213, 84, 213)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_koatn")
+
+[node name="arena_kulit" instance=ExtResource("1_yvycy")]
+
+[node name="Kulit" parent="." index="0" groups=["navmesh_level1"]]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Kulit" index="0"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kulit/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_8isfh")
+
+[node name="Kulit5" type="MeshInstance3D" parent="." index="1" groups=["navmesh_level1"]]
+transform = Transform3D(5.31054, 0, 0, 0, 0.244492, 0, 0, 0, 5.31054, 10.5568, 0.148587, 0)
+mesh = SubResource("ArrayMesh_ispng")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Kulit5" index="0"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kulit5/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_8isfh")
+
+[node name="Kulit6" type="MeshInstance3D" parent="." index="2" groups=["navmesh_level1"]]
+transform = Transform3D(5.31054, 0, 0, 0, 0.244492, 0, 0, 0, 5.31054, 10.5568, 0.148587, 10.5627)
+mesh = SubResource("ArrayMesh_ispng")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Kulit6" index="0"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kulit6/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_8isfh")
+
+[node name="Kulit7" type="MeshInstance3D" parent="." index="3" groups=["navmesh_level1"]]
+transform = Transform3D(5.31054, 0, 0, 0, 0.244492, 0, 0, 0, 5.31054, 10.5568, 0.148587, -10.6437)
+mesh = SubResource("ArrayMesh_ispng")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Kulit7" index="0"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kulit7/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_8isfh")
+
+[node name="Kulit8" type="MeshInstance3D" parent="." index="4" groups=["navmesh_level1"]]
+transform = Transform3D(5.31054, 0, 0, 0, 0.244492, 0, 0, 0, 5.31054, -10.5126, 0.148587, -10.6437)
+mesh = SubResource("ArrayMesh_ispng")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Kulit8" index="0"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kulit8/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_8isfh")
+
+[node name="Kulit9" type="MeshInstance3D" parent="." index="5" groups=["navmesh_level1"]]
+transform = Transform3D(5.31054, 0, 0, 0, 0.244492, 0, 0, 0, 5.31054, -10.5126, 0.148587, 10.5158)
+mesh = SubResource("ArrayMesh_ispng")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Kulit9" index="0"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kulit9/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_8isfh")
+
+[node name="Kulit3" type="MeshInstance3D" parent="." index="6" groups=["navmesh_level1"]]
+transform = Transform3D(5.31054, 0, 0, 0, 0.244492, 0, 0, 0, 5.31054, 0, 0.148587, -10.5651)
+mesh = SubResource("ArrayMesh_ispng")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Kulit3" index="0"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kulit3/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_8isfh")
+
+[node name="Kulit4" type="MeshInstance3D" parent="." index="7" groups=["navmesh_level1"]]
+transform = Transform3D(5.31054, 0, 0, 0, 0.244492, 0, 0, 0, 5.31054, 0, 0.148587, 10.5012)
+mesh = SubResource("ArrayMesh_ispng")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Kulit4" index="0"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kulit4/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_8isfh")
+
+[node name="Kulit2" type="MeshInstance3D" parent="." index="8" groups=["navmesh_level1"]]
+transform = Transform3D(5.31054, 0, 0, 0, 0.244492, 0, 0, 0, 5.31054, -10.5825, 0.148587, 0)
+mesh = SubResource("ArrayMesh_ispng")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Kulit2" index="0"]
+collision_layer = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kulit2/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_8isfh")

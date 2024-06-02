@@ -1,0 +1,61 @@
+[gd_scene load_steps=13 format=3 uid="uid://br1xw1w8fcgks"]
+
+[ext_resource type="Texture2D" uid="uid://doyodkg1ds7td" path="res://Assets/Textures/Sky.png" id="1_2jeyo"]
+[ext_resource type="Script" path="res://Scripts/Mechanics/EnemySpawnTimer.gd" id="2_edd4r"]
+[ext_resource type="PackedScene" uid="uid://8wnnefvf6x83" path="res://Scenes/Enemies/enemy_herpes.tscn" id="3_joy31"]
+[ext_resource type="PackedScene" uid="uid://cpwt4sy6yvyc6" path="res://Scenes/Enemies/enemy_stercoralis.tscn" id="4_foakx"]
+[ext_resource type="PackedScene" uid="uid://dukfsde7scdey" path="res://Scenes/Characters/player_immuno_gen1.tscn" id="4_ogjsp"]
+[ext_resource type="PackedScene" uid="uid://bdlc31qx3nf2i" path="res://Scenes/Enemies/enemy_taenia.tscn" id="5_8wyrw"]
+[ext_resource type="Script" path="res://Scripts/Mechanics/DebugTimer.gd" id="7_fvkmu"]
+[ext_resource type="PackedScene" uid="uid://cv31wjikf02gv" path="res://Scenes/Levels/arena_kulit_ground.tscn" id="7_j4s64"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6c4vd"]
+panorama = ExtResource("1_2jeyo")
+
+[sub_resource type="Sky" id="Sky_lbmov"]
+sky_material = SubResource("PanoramaSkyMaterial_6c4vd")
+
+[sub_resource type="Environment" id="Environment_ctwiv"]
+background_mode = 2
+sky = SubResource("Sky_lbmov")
+tonemap_mode = 2
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_xxrrd"]
+vertices = PackedVector3Array(-5.29299, 0.036714, 15.4458, -5.24299, 0.036714, 15.7458, 15.757, 0.036714, 15.7958, -15.793, 0.036714, -5.3042, -15.743, 0.036714, 15.4458, -5.29299, 0.036714, 15.4458, -15.743, 0.036714, -15.8542, -15.793, 0.036714, -5.3042, -5.29299, 0.036714, 15.4458, 15.757, 0.036714, 15.7958, 15.757, 0.036714, -15.8542)
+polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(5, 4, 3), PackedInt32Array(7, 6, 8), PackedInt32Array(8, 6, 9), PackedInt32Array(9, 6, 10)]
+geometry_source_geometry_mode = 1
+geometry_source_group_name = &"navmesh_level1"
+cell_size = 0.05
+cell_height = 0.05
+agent_height = 0.1
+agent_radius = 0.1
+
+[node name="Level1_Kulit" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ctwiv")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866026, -0.433013, 0.249999, 0.5, -0.750001, 0.433012, -1.3411e-07, 0.499999, 0.866026, 0, 0, 0)
+light_energy = 0.4
+shadow_enabled = true
+
+[node name="EnemySpawnTimer" type="Timer" parent="."]
+autostart = true
+script = ExtResource("2_edd4r")
+enemy_to_spawn = Array[PackedScene]([ExtResource("3_joy31"), ExtResource("4_foakx"), ExtResource("5_8wyrw")])
+
+[node name="Player" parent="." instance=ExtResource("4_ogjsp")]
+enemy_to_kill = 10
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_xxrrd")
+
+[node name="arena_kulit" parent="NavigationRegion3D" instance=ExtResource("7_j4s64")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.417381, 0)
+
+[node name="DebugTimer" type="Timer" parent="."]
+autostart = true
+script = ExtResource("7_fvkmu")
+
+[connection signal="timeout" from="DebugTimer" to="DebugTimer" method="_on_timeout"]

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://du10fn66sird"]
+
+[ext_resource type="PackedScene" uid="uid://c2urprqfh6eoo" path="res://Assets/Models/Environment/arena_saraf.blend" id="1_b1ay4"]
+
+[node name="arena_saraf" instance=ExtResource("1_b1ay4")]

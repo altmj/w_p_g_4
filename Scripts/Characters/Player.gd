@@ -24,6 +24,9 @@ var bullet = load("res://Scenes/Weapons/player_bullet.tscn")
 @export var spring_arm_default_angle : float = -60 # in degree
 @export var peeking_angle : float = 11 # in degree
 
+@export_group("Mission")
+@export var enemy_to_kill : int = 7
+
 @export_group("Virtual Joysticks")
 @export var joystick_left : VirtualJoystick
 @export var joystick_right : VirtualJoystick
@@ -248,8 +251,21 @@ func take_damage(damage : float):
 	if not check_flashing():
 		healthbar.take_damage(damage)
 		hitflash.hitflash()
+		if healthbar.current_health <= 0:
+			get_tree().change_scene_to_file("res://Scenes/UI/GameOver.tscn")
 
 func _on_check_damage_timer_timeout():
 	if GlobalVar.cached_damage > 0.0:
 		take_damage(GlobalVar.cached_damage)
 		GlobalVar.cached_damage = 0.0
+
+func _on_pause_button_pressed():
+	get_tree().change_scene_to_file("res://Scenes/UI/Pause.tscn")
+
+func _on_check_kill_timer_timeout():
+	if GlobalVar.cached_kill > 0:
+		enemy_to_kill -= GlobalVar.cached_kill
+		GlobalVar.cached_kill = 0
+		$UI/KillCounter.set_text("Enemies left: %d" % enemy_to_kill)
+		if enemy_to_kill <= 0:
+			get_tree().change_scene_to_file("res://Scenes/UI/winning_screen.tscn")

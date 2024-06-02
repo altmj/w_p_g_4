@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://be4xl7pp80u6b"]
+
+[ext_resource type="Texture2D" uid="uid://daojgifvcko4p" path="res://Assets/UiGame/ingame/Group 18.png" id="1_766l2"]
+
+[node name="TextureButton" type="TextureButton"]
+offset_left = 63.0
+offset_top = 64.0
+offset_right = 235.0
+offset_bottom = 234.0
+texture_normal = ExtResource("1_766l2")
+ignore_texture_size = true
+stretch_mode = 0

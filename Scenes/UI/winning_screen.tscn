@@ -1,0 +1,118 @@
+[gd_scene load_steps=12 format=3 uid="uid://duwqf6hxtjotj"]
+
+[ext_resource type="Script" path="res://Scripts/UI/mainMenu.gd" id="1_hgk0o"]
+[ext_resource type="Texture2D" uid="uid://ck780qg6305r3" path="res://Assets/UiGame/Pause/Background 1.png" id="2_qys8e"]
+[ext_resource type="Texture2D" uid="uid://bhlbk35aa34ob" path="res://Assets/UiGame/Pause/Android Large - Well done.png" id="3_vkgcf"]
+[ext_resource type="Texture2D" uid="uid://7g76aib38eic" path="res://Assets/UiGame/Pause/Group 9.png" id="4_gr8jh"]
+[ext_resource type="FontFile" uid="uid://dc7rpxi1bjtqp" path="res://Assets/UiGame/LilitaOne-Regular.ttf" id="5_1galt"]
+[ext_resource type="Texture2D" uid="uid://c870vl5hdqrhx" path="res://Assets/UiGame/Pause/Name will done.png" id="6_x1rs0"]
+
+[sub_resource type="Theme" id="Theme_oahkf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wtevl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_imxvt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8rt0s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7322"]
+
+[node name="Game" type="Node"]
+
+[node name="Will Done" type="Control" parent="."]
+light_mask = 31
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hgk0o")
+
+[node name="Background" type="TextureRect" parent="Will Done"]
+light_mask = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.007
+anchor_right = 1.0
+anchor_bottom = 1.007
+offset_top = -0.800001
+offset_bottom = -0.800293
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_qys8e")
+expand_mode = 1
+
+[node name="ui" type="TextureRect" parent="Will Done"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_vkgcf")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Main Exit" type="TextureRect" parent="Will Done"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 360.0
+offset_top = 1936.0
+offset_right = -338.0
+offset_bottom = -304.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_gr8jh")
+expand_mode = 1
+
+[node name="Button Exit" type="Button" parent="Will Done/Main Exit"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 380.0
+offset_bottom = 144.0
+theme = SubResource("Theme_oahkf")
+theme_override_fonts/font = ExtResource("5_1galt")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wtevl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_imxvt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8rt0s")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v7322")
+text = "Exit"
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="Will Done"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.338
+anchor_top = 0.173
+anchor_right = 0.669
+anchor_bottom = 0.233
+offset_left = -0.0400391
+offset_top = 0.799988
+offset_right = 0.47998
+offset_bottom = 0.799988
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.447059, 0.572549, 0.752941, 1)
+theme_override_fonts/font = ExtResource("5_1galt")
+theme_override_font_sizes/font_size = 90
+text = "PAUSE"
+flat = true
+
+[node name="TextureRect2" type="TextureRect" parent="Will Done"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 93.0
+offset_right = 1000.0
+offset_bottom = 521.0
+texture = ExtResource("6_x1rs0")
+expand_mode = 1
+
+[connection signal="pressed" from="Will Done/Main Exit/Button Exit" to="Will Done" method="_on_button_exit_pressed"]

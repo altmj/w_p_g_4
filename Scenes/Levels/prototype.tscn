@@ -77,7 +77,6 @@ shadow_enabled = true
 [node name="EnemySpawnTimer" type="Timer" parent="."]
 autostart = true
 script = ExtResource("7_4asqd")
-enemy_to_spawn = ExtResource("8_fcgib")
 
 [node name="Player" parent="." instance=ExtResource("4_e4jyo")]
 
@@ -118,32 +117,35 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0636649, -1.19209e-07, 0.09
 visible = false
 
 [node name="Skeleton3D" parent="UnusedChildrenToDestroy/Player/PlayerModelBlender/Armature" index="0"]
-bones/0/rotation = Quaternion(0.573196, -0.00491965, -0.0146208, 0.819273)
-bones/2/rotation = Quaternion(-0.536738, 0.0312955, -0.0395024, 0.842243)
-bones/3/rotation = Quaternion(-0.00438194, 0.00083751, -0.0269252, 0.999628)
-bones/5/rotation = Quaternion(-0.197252, 0.538209, 0.771939, 0.274832)
-bones/6/rotation = Quaternion(5.02091e-07, -1.54025e-07, 0.343394, 0.939191)
-bones/14/rotation = Quaternion(0.189224, 0.541084, 0.770932, -0.277644)
-bones/15/rotation = Quaternion(2.88168e-08, -9.22889e-07, -0.326066, 0.945347)
-bones/25/rotation = Quaternion(0.255104, 0.00137906, -0.509044, 0.822067)
-bones/32/rotation = Quaternion(0.540884, -0.000139658, 0.269234, 0.796842)
+bones/0/rotation = Quaternion(0.573108, 0.0111898, 0.00840755, 0.81936)
+bones/1/rotation = Quaternion(-0.0393101, 0.0169734, 0.0229605, 0.998819)
+bones/2/rotation = Quaternion(-0.540314, -0.0470956, 0.0113521, 0.840068)
+bones/3/rotation = Quaternion(-0.00297549, -0.00124877, 0.040147, 0.999189)
+bones/5/rotation = Quaternion(-0.200904, 0.536857, 0.770054, 0.28007)
+bones/6/rotation = Quaternion(5.06322e-07, -1.39489e-07, 0.31618, 0.948699)
+bones/14/rotation = Quaternion(0.174568, 0.545988, 0.778137, -0.256759)
+bones/15/rotation = Quaternion(1.11429e-08, -9.23271e-07, -0.307907, 0.951416)
+bones/25/rotation = Quaternion(0.227927, 0.00419264, -0.452106, 0.862341)
+bones/26/rotation = Quaternion(0.102754, -0.0436468, 0.0513674, 0.99242)
+bones/27/rotation = Quaternion(0.117375, -0.0498574, 0.0586765, 0.990098)
+bones/32/rotation = Quaternion(0.503798, -0.000424387, 0.248337, 0.827355)
 
 [node name="UI" parent="UnusedChildrenToDestroy/Player" index="6"]
 visible = false
 
-[node name="FPSCounter" parent="UnusedChildrenToDestroy/Player/UI" index="5"]
+[node name="FPSCounter" parent="UnusedChildrenToDestroy/Player/UI" index="6"]
 offset_left = -123.218
 offset_top = 1.0
 offset_right = -17.2184
 offset_bottom = 51.0
 
-[node name="HealthBar" parent="UnusedChildrenToDestroy/Player/UI" index="6"]
+[node name="HealthBar" parent="UnusedChildrenToDestroy/Player/UI" index="8"]
 offset_left = 0.0
 offset_top = 0.0
 offset_right = 335.0
 offset_bottom = 42.0
 
-[node name="ExpBar" parent="UnusedChildrenToDestroy/Player/UI" index="7"]
+[node name="ExpBar" parent="UnusedChildrenToDestroy/Player/UI" index="9"]
 offset_left = 0.0
 offset_top = 50.0
 offset_right = 285.0
